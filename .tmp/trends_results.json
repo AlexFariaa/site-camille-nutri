@@ -1,0 +1,312 @@
+{
+  "timestamp": "2026-03-27T02:49:35.919483+00:00",
+  "config": {
+    "seeds": [
+      "emagrecer rápido",
+      "dieta para ganhar massa",
+      "nutricionista online",
+      "o que comer antes do treino",
+      "cardápio semanal saudável",
+      "como perder barriga",
+      "alimentação para performance",
+      "hábitos alimentares saudáveis"
+    ],
+    "geo": "BR",
+    "timeframe": "today 3-m"
+  },
+  "raw_trends": [
+    {
+      "seed": "emagrecer rápido",
+      "average_interest": 0,
+      "rising_queries": [
+        "suplementos para emagrecer rápido",
+        "formas de emagrecer rápido",
+        "chá para emagrecer rápido e perder barriga",
+        "dieta de pobre para emagrecer rápido",
+        "como emagrecer o rosto rápido"
+      ],
+      "top_queries": [
+        "para emagrecer rápido",
+        "como emagrecer rápido",
+        "como emagrecer",
+        "remédio para emagrecer",
+        "remédio para emagrecer rápido"
+      ],
+      "rising_topics": [
+        "Morning",
+        "Organism",
+        "Detoxification"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "dieta para ganhar massa",
+      "average_interest": 0,
+      "rising_queries": [
+        "dieta para perder peso e ganhar massa muscular",
+        "dieta para perder gordura e ganhar massa muscular pdf",
+        "dieta simples para ganhar massa muscular",
+        "dieta para ectomorfo ganhar massa muscular",
+        "dieta para ganhar massa muscular rápido"
+      ],
+      "top_queries": [
+        "dieta para ganhar massa muscular",
+        "dieta para ganhar massa magra",
+        "dieta para ganhar peso",
+        "dieta para emagrecer e ganhar massa",
+        "melhor dieta para ganhar massa muscular"
+      ],
+      "rising_topics": [
+        "Bean",
+        "Growth Supplements",
+        "Meal"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "nutricionista online",
+      "average_interest": 0,
+      "rising_queries": [],
+      "top_queries": [
+        "consulta online nutricionista",
+        "consulta nutricionista",
+        "nutricionista online grátis",
+        "nutricionista unimed",
+        "nutricionista esportivo online"
+      ],
+      "rising_topics": [
+        "Doctoralia",
+        "Sports nutrition",
+        "Curriculum"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "o que comer antes do treino",
+      "average_interest": 0,
+      "rising_queries": [
+        "whey antes ou depois do treino",
+        "o que comer pos treino",
+        "o que comer pré-treino para emagrecer",
+        "pre treino"
+      ],
+      "top_queries": [
+        "o que comer depois do treino",
+        "o que é bom comer antes do treino",
+        "o que comer antes e depois do treino",
+        "pre treino",
+        "o que comer antes do treino de manhã"
+      ],
+      "rising_topics": [
+        "Yogurt",
+        "Juice",
+        "Tapioca"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "cardápio semanal saudável",
+      "average_interest": 0,
+      "rising_queries": [
+        "cardápio semanal saudável simples e barato"
+      ],
+      "top_queries": [
+        "cardápio semanal saudável simples e barato"
+      ],
+      "rising_topics": [
+        "Healthy diet"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "como perder barriga",
+      "average_interest": 0,
+      "rising_queries": [
+        "como perder um homem em 10 dias",
+        "como perder barriga rapido e facil em uma semana",
+        "como fazer dieta para perder barriga",
+        "como fazer para perder barriga rápido",
+        "mounjaro"
+      ],
+      "top_queries": [
+        "como fazer para perder barriga",
+        "como perder gordura da barriga",
+        "como emagrecer",
+        "perder barriga rapido",
+        "como perder barriga rapido"
+      ],
+      "rising_topics": [
+        "Rope",
+        "Chia seed",
+        "Lard"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "alimentação para performance",
+      "average_interest": 0,
+      "rising_queries": [],
+      "top_queries": [],
+      "rising_topics": [
+        "whole",
+        "being",
+        "Cost"
+      ],
+      "source": "serpapi"
+    },
+    {
+      "seed": "hábitos alimentares saudáveis",
+      "average_interest": 0,
+      "rising_queries": [],
+      "top_queries": [],
+      "rising_topics": [
+        "Nutrient",
+        "Tool",
+        "major"
+      ],
+      "source": "serpapi"
+    }
+  ],
+  "suggestions": [
+    {
+      "keyword": "suplementos para emagrecer rápido",
+      "trend_type": "rising",
+      "source_seed": "emagrecer rápido",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "formas de emagrecer rápido",
+      "trend_type": "rising",
+      "source_seed": "emagrecer rápido",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "chá para emagrecer rápido e perder barriga",
+      "trend_type": "rising",
+      "source_seed": "emagrecer rápido",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "dieta de pobre para emagrecer rápido",
+      "trend_type": "rising",
+      "source_seed": "emagrecer rápido",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "como emagrecer o rosto rápido",
+      "trend_type": "rising",
+      "source_seed": "emagrecer rápido",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "dieta para perder peso e ganhar massa muscular",
+      "trend_type": "rising",
+      "source_seed": "dieta para ganhar massa",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "dieta para perder gordura e ganhar massa muscular pdf",
+      "trend_type": "rising",
+      "source_seed": "dieta para ganhar massa",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "dieta simples para ganhar massa muscular",
+      "trend_type": "rising",
+      "source_seed": "dieta para ganhar massa",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "dieta para ectomorfo ganhar massa muscular",
+      "trend_type": "rising",
+      "source_seed": "dieta para ganhar massa",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "dieta para ganhar massa muscular rápido",
+      "trend_type": "rising",
+      "source_seed": "dieta para ganhar massa",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "whey antes ou depois do treino",
+      "trend_type": "rising",
+      "source_seed": "o que comer antes do treino",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "o que comer pos treino",
+      "trend_type": "rising",
+      "source_seed": "o que comer antes do treino",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "o que comer pré-treino para emagrecer",
+      "trend_type": "rising",
+      "source_seed": "o que comer antes do treino",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "pre treino",
+      "trend_type": "rising",
+      "source_seed": "o que comer antes do treino",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "cardápio semanal saudável simples e barato",
+      "trend_type": "rising",
+      "source_seed": "cardápio semanal saudável",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "como perder um homem em 10 dias",
+      "trend_type": "rising",
+      "source_seed": "como perder barriga",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "como perder barriga rapido e facil em uma semana",
+      "trend_type": "rising",
+      "source_seed": "como perder barriga",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "como fazer dieta para perder barriga",
+      "trend_type": "rising",
+      "source_seed": "como perder barriga",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "como fazer para perder barriga rápido",
+      "trend_type": "rising",
+      "source_seed": "como perder barriga",
+      "relative_interest": 0,
+      "source": "serpapi"
+    },
+    {
+      "keyword": "mounjaro",
+      "trend_type": "rising",
+      "source_seed": "como perder barriga",
+      "relative_interest": 0,
+      "source": "serpapi"
+    }
+  ]
+}

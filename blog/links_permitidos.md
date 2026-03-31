@@ -25,3 +25,11 @@ Indice de posts publicados no blog. Usado pelo agente para inserir links interno
 * **`/blog/como-entender-os-proprios-macros-passo-a-passo`**
   * **Título/Tema:** Da Confusão à Clareza: Como Aprender a Entender os Próprios Macros (Passo a Passo)
   * **Quando usar:** Sugerir quando o leitor menciona confusão sobre macros, quer aprender a contar carboidratos/proteínas/gorduras, está usando aplicativo mas se sente perdido, ou busca entender como passar de dieta pronta para autonomia alimentar. Relevante em artigos sobre macronutrientes, cardápio personalizado, ganho de massa, emagrecimento e educação nutricional.
+
+* **`/blog/calculo-de-macros-na-pratica-estudo-de-caso`**
+  * **Título/Tema:** Cálculo de Macros na Prática: Como Ajustei a Dieta de uma Paciente e Transformei os Resultados
+  * **Quando usar:** Sugerir quando o leitor quer ver um exemplo real de cálculo de macros funcionando, busca prova social sobre acompanhamento nutricional individualizado, ou está em dúvida se vale a pena ajustar os macros. Relevante em artigos sobre macronutrientes, recomposição corporal, ajuste de dieta, emagrecimento com ganho de massa e resultados com nutricionista.
+
+* **`/blog/checklist-calcular-ajustar-macros-dieta`**
+  * **Título/Tema:** Checklist para Calcular e Ajustar os Macros da Sua Dieta sem Erro
+  * **Quando usar:** Sugerir quando o leitor busca um passo a passo prático para calcular macros, quer evitar erros comuns no cálculo, precisa de checklist para ajustar a dieta, ou está perdido sobre quando e como revisar os macros. Relevante em artigos sobre macronutrientes, cálculo de calorias, ajuste de dieta, emagrecimento, ganho de massa e educação nutricional.

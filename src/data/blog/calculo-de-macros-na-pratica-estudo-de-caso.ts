@@ -1,0 +1,87 @@
+import type { BlogPost } from "@/data/blog-posts";
+
+const post: BlogPost = {
+  slug: "calculo-de-macros-na-pratica-estudo-de-caso",
+  title: "Cálculo de Macros na Prática: Como Ajustei a Dieta de uma Paciente e Transformei os Resultados",
+  excerpt: "Descubra como o cálculo de macros transformou os resultados de uma paciente. Veja o impacto real na dieta e performance.",
+  date: "30 Mar 2026",
+  category: "Hábitos e Estilo de Vida",
+  author: "Camille Barbosa",
+  readTime: "8 min de leitura",
+  metaTitle: "Cálculo de Macros na Prática: Estudo de Caso | Camille Barbosa",
+  coverImage: "/images/blog/calculo-de-macros-na-pratica-estudo-de-caso.avif",
+  thumbImage: "/images/blog/thumb-calculo-de-macros-na-pratica-estudo-de-caso.avif",
+  content: `<p><strong>Você já ouviu falar em cálculo de macros, mas acha que é coisa de atleta profissional ou planilhas complicadas?</strong> Pois é, essa história também começou assim: com uma pessoa comum, uma rotina puxada e o desejo de ver resultado de verdade, não só na balança, mas na energia, no espelho e no humor.</p>
+<p>Neste estudo de caso, você vai acompanhar uma transformação real. Nada de promessas milagrosas: apenas um passo a passo honesto mostrando como o ajuste de dieta com foco nos macros virou o jogo. Curioso para saber como isso se traduz em resultados concretos? Segue comigo, porque o final é daqueles que dá vontade de testar ontem.</p>
+
+<nav class="article-index" aria-label="Índice do artigo">
+  <p><strong>Neste artigo:</strong></p>
+  <ol>
+    <li><a href="#o-publicitario-que-vivia-de-dieta-sem-ver-resultado-o-ponto-de-partida" title="Ir para: O publicitário que vivia de dieta sem ver resultado: o ponto de partida">O publicitário que vivia de dieta sem ver resultado: o ponto de partida</a></li>
+    <li><a href="#o-dia-em-que-o-calculo-de-macros-virou-o-jogo-e-o-que-rolou-nos-primeiros-30-dias" title="Ir para: O dia em que o cálculo de macros virou o jogo (e o que rolou nos primeiros 30 dias)">O dia em que o cálculo de macros virou o jogo (e o que rolou nos primeiros 30 dias)</a></li>
+    <li><a href="#o-ajuste-de-dieta-que-nunca-tinha-sido-feito-e-a-virada-na-energia-e-no-humor" title="Ir para: O ajuste de dieta que nunca tinha sido feito, e a virada na energia e no humor">O ajuste de dieta que nunca tinha sido feito, e a virada na energia e no humor</a></li>
+    <li><a href="#de-4kg-de-gordura-a-menos-para-o-primeiro-ganho-de-massa-da-vida-os-numeros-que-impressionam" title="Ir para: De 4kg de gordura a menos para o primeiro ganho de massa da vida: os números que impressionam">De 4kg de gordura a menos para o primeiro ganho de massa da vida: os números que impressionam</a></li>
+    <li><a href="#3-movimentos-que-qualquer-pessoa-pode-replicar-do-que-funcionou-na-pratica" title="Ir para: 3 movimentos que qualquer pessoa pode replicar do que funcionou na prática">3 movimentos que qualquer pessoa pode replicar do que funcionou na prática</a></li>
+  </ol>
+</nav>
+
+<h2 id="o-publicitario-que-vivia-de-dieta-sem-ver-resultado-o-ponto-de-partida">O publicitário que vivia de dieta sem ver resultado: o ponto de partida</h2>
+<p>Sabe aquela pessoa que já tentou de tudo: jejum intermitente, cortar o jantar, dieta da moda, "segunda sem carne", mas toda vez acabava no mesmo ciclo de frustração? Esse era o Henrique, 33 anos, publicitário em São Paulo, apaixonado por crossfit, mas só de ver no Instagram, porque na prática, a disposição não acompanhava o feed.</p>
+<p>Henrique não é exceção. Ele já tinha baixado aplicativos de contagem calórica, tentado planilhas grátis e até consultado fóruns sobre como montar cardápio para <a href="/blog/dieta-para-emagrecer-vs-ganhar-massa" title="Ir para: Dieta para Emagrecer ou Ganhar Massa? Qual Escolher para o Seu Objetivo?">emagrecer e ganhar massa</a>, mas a balança permanecia teimosa. O problema não era falta de vontade, era falta de método.</p>
+<p>O que ele não sabia? Que o tal do "cálculo de macros" era menos sobre matemática de astronauta e mais sobre entender o próprio corpo. E no caso do Henrique, o erro estava justamente aí: comer menos não era o suficiente, e treinar mais só aumentava o cansaço.</p>
+<blockquote>
+  "Eu achava que só precisava fechar a boca e correr mais na esteira. Mas não dava em nada. Parecia que meu corpo travava. Quando ouvi falar de macros, achei que era só para fisiculturista. Tava errado.", Henrique, paciente real (nome alterado)
+</blockquote>
+
+<img src="/images/blog/calculo-de-macros-na-pratica-estudo-de-caso-inline-1.avif" alt="Ilustração de um jovem publicitário de camiseta, sentado à mesa com notebook, olhando para uma salada e um pão francês," title="Ilustração de um jovem publicitário de camiseta, sentado à mesa com notebook, olhando para uma salada e um pão francês," class="article-inline-image">
+
+<h2 id="o-dia-em-que-o-calculo-de-macros-virou-o-jogo-e-o-que-rolou-nos-primeiros-30-dias">O dia em que o cálculo de macros virou o jogo (e o que rolou nos primeiros 30 dias)</h2>
+<p>A virada de chave aconteceu num sábado de manhã, depois de uma noite maldormida e um treino em que Henrique se sentiu um zumbi. Ele decidiu buscar orientação profissional e chegou até minha consultoria. A primeira frase que ouvi dele foi: "Eu só queria entender o que comer sem virar escravo da comida". Nada mais justo.</p>
+<p>Na avaliação inicial, ficou claro: Henrique comia pouco carboidrato, proteína demais só no almoço, e gordura era vilã. Resumindo, faltava equilíbrio. O <strong>cálculo de macros</strong> personalizado foi o divisor de águas. Nada de copiar o plano do amigo ou seguir porcentagem aleatória da internet.</p>
+<p>Montamos juntos um ajuste de dieta baseado nos objetivos dele: emagrecimento sem perder energia, e depois ganho de massa sem aquele efeito sanfona. O segredo? Distribuição dos macros ao longo do dia, respeitando horários e preferências reais. Spoiler: pão francês no café da manhã foi liberado, sim!</p>
+<p>Os primeiros 30 dias foram de adaptação. Teve susto ao ver mais comida no prato, teve dúvida ("será que isso engorda?"), mas também teve treino que finalmente rendeu. Henrique passou a registrar o que comia, não por paranoia, mas para entender padrões. E viu que, pela primeira vez, não estava com fome nem caindo de sono no trabalho.</p>
+<blockquote>
+  "Achei que comer mais carboidrato ia me fazer engordar. Mas foi o contrário: tive mais pique e parei de atacar o armário à noite. E não precisei cortar tudo que eu gosto.", Henrique
+</blockquote>
+
+<img src="/images/blog/calculo-de-macros-na-pratica-estudo-de-caso-inline-2.avif" alt="Gráfico ou mockup ilustrando uma planilha simples de cálculo de macros, com divisão clara entre proteínas, carboidratos" title="Gráfico ou mockup ilustrando uma planilha simples de cálculo de macros, com divisão clara entre proteínas, carboidratos" class="article-inline-image">
+
+<h2 id="o-ajuste-de-dieta-que-nunca-tinha-sido-feito-e-a-virada-na-energia-e-no-humor">O ajuste de dieta que nunca tinha sido feito, e a virada na energia e no humor</h2>
+<p>Vamos ser sinceros: ninguém aguenta viver de "pote de frango com batata-doce" se o objetivo é durar mais de uma semana. O que Henrique experimentou foi um <strong>ajuste de dieta</strong> focado em rotina real, com comida de verdade, lanche na padaria e almoço na firma, e, pasme, sem culpa.</p>
+<p>Aqui está o segredo que muita gente ignora: <strong>o cálculo de macros serve para personalizar</strong>. O que funciona para um, pode ser desastre para outro. Por isso, cada etapa foi ajustada semanalmente. Nada de plano engessado. Se naquele dia o treino foi puxado, aumentamos o carbo. Se o estresse bateu forte, ajustamos a proteína para garantir saciedade.</p>
+<p>O reflexo não veio só na balança. Henrique relatou menos irritação, mais foco no trabalho e menos vontade de "jacar" no fim de semana. De quebra, dormiu melhor e acordou com disposição, aquele efeito colateral que ninguém conta, mas todo mundo quer.</p>
+<p>Aliás, já viu o artigo sobre <a href="/blog/como-entender-os-proprios-macros-passo-a-passo" title="Ir para: Da Confusão à Clareza: Como Aprender a Entender os Próprios Macros (Passo a Passo)">como entender os próprios macros</a>? Henrique virou fã desse tipo de autoconhecimento alimentar, e o resultado é autonomia para ajustar o cardápio até nas férias.</p>
+<p>Na minha metodologia, <strong>consistência vale mais do que perfeição</strong>. Não precisa acertar 100% dos dias. Precisa entender o que funciona para você, e ajustar. O plano do Henrique passou por pelo menos três micro-revisões antes de engrenar de vez, porque é assim que acontece na vida real.</p>
+
+<h2 id="de-4kg-de-gordura-a-menos-para-o-primeiro-ganho-de-massa-da-vida-os-numeros-que-impressionam">De 4kg de gordura a menos para o primeiro ganho de massa da vida: os números que impressionam</h2>
+<p>Chegou a hora dos dados, porque transformação real não se mede só no espelho. Em 10 semanas, Henrique saiu de 84kg para 79,7kg. Mas o mais marcante? <strong>Foram 4kg de gordura eliminados e 1,2kg de massa magra ganhos</strong> (confirmados em bioimpedância, nada de achismo). O resultado foi visível: cintura menor, ombros mais marcados, e, finalmente, aquela sensação de "caber na própria rotina" sem tortura alimentar.</p>
+<p>Outro impacto: a performance no treino dobrou. Henrique relatou levantar mais peso, correr melhor e, principalmente, não sentir aquele cansaço de quem vive em déficit calórico eterno. A frequência de "no-show" no box de crossfit despencou, motivação renovada, porque o corpo respondia rápido.</p>
+<p>Resultados colaterais? Melhor controle da ansiedade, menos episódios de compulsão e um sono tão profundo que até o despertador ficou com inveja. Sem contar os feedbacks no trabalho: chefe elogiando foco e colegas perguntando o segredo. Spoiler: não era suplemento milagroso, era método e ajuste fino de macros.</p>
+<blockquote>
+  "O mais louco foi ver que, quando comecei a comer direito de acordo com meus macros, meu corpo mudou sem sofrimento. Não precisei virar fitness do dia pra noite. E nunca me senti tão bem.", Henrique
+</blockquote>
+
+<h2 id="3-movimentos-que-qualquer-pessoa-pode-replicar-do-que-funcionou-na-pratica">3 movimentos que qualquer pessoa pode replicar do que funcionou na prática</h2>
+<ol>
+  <li>
+    <strong>1. Personalizar o cálculo de macros (nada de copiar da internet)</strong>
+    <p>Não caia na armadilha dos "percentuais mágicos". O que fez diferença para o Henrique foi um <a href="/blog/recomposicao-corporal-como-perder-gordura-e-ganhar-massa" title="Ir para: Recomposição Corporal: Como Perder Gordura e Ganhar Massa ao Mesmo Tempo">cálculo de macros ajustado ao objetivo</a>, à rotina e ao paladar dele. Isso significa revisar quantidades toda semana, considerando treino, sono e até humor. O segredo? Consultar um profissional que saiba adaptar e não só passar tabela pronta.</p>
+  </li>
+  <li>
+    <strong>2. Registrar sem paranoia (mas com atenção)</strong>
+    <p>Planilha, aplicativo ou bloco de notas: escolha a ferramenta que funciona para você. Henrique usou uma planilha simples (nada de app pago) para anotar refeições e perceber padrões. Não é sobre pesar tudo até a última folha de alface, mas sobre entender onde estão os excessos e os acertos. Esse autoconhecimento acelera o ajuste da dieta e evita recaídas no "modo automático".</p>
+  </li>
+  <li>
+    <strong>3. Ajustar a estratégia conforme a vida muda (e não o contrário)</strong>
+    <p>Vai viajar? Mudou o horário do treino? Nova meta no trabalho? O cálculo de macros acompanha, não engessa. O que sustenta resultados é a flexibilidade para adaptar cardápio sem perder o rumo. Henrique aprendeu a fazer substituições inteligentes e a negociar refeições sociais sem culpa. É isso que transforma resultado pontual em hábito duradouro.</p>
+  </li>
+</ol>
+<p>Na minha experiência, esses três movimentos separam quem só tenta de quem de fato transforma. E, claro, contar com um acompanhamento individualizado faz toda diferença. Como sempre digo: cada corpo, cada rotina, cada contexto.</p>
+
+<h2 id="o-proximo-caso-pode-ser-o-seu-se-voce-der-o-primeiro-passo-sem-medo-do-calculo-de-macros">O próximo caso pode ser o seu, se você der o primeiro passo (sem medo do cálculo de macros)</h2>
+<p>Você percebeu que cálculo de macros não é só para bodybuilder ou blogueiro fitness? É ferramenta poderosa para gente real, rotina puxada, vida corrida. A diferença está em <strong>adaptar para o seu contexto</strong>, sem fórmulas genéricas.</p>
+<p>Se você cansou de dietas que não encaixam, de resultados que evaporam, ou quer aprender a ajustar a alimentação para emagrecer e ganhar massa de um jeito sustentável, a metodologia que aplico nos meus atendimentos foi feita para isso. No meu acompanhamento nutricional, cada plano é único, igual ao caso do Henrique e de tantos outros que já passaram pela mesma transformação.</p>
+<p>Que tal ser o próximo estudo de caso? Entre em contato e agende sua consulta com a Camille.</p>`
+};
+
+export default post;

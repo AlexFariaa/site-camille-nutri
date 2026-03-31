@@ -1,0 +1,152 @@
+{
+  "site": {
+    "name": "Camille Barbosa",
+    "domain": "camillebarbosa.com.br",
+    "author": "Camille Barbosa",
+    "description": "Nutricionista especializada em emagrecimento, ganho de massa e mudança real de hábitos alimentares",
+    "target_audience": "Pessoas que buscam emagrecimento, ganho de massa, performance nos treinos ou mudança real de hábitos"
+  },
+  "blog": {
+    "directory": "src/data/blog",
+    "index_file": "src/data/blog-posts.ts",
+    "template_file": "src/app/blog/template-gerador/page.tsx",
+    "links_file": "blog/links_permitidos.md",
+    "images_dir": "public/images/blog",
+    "library_dir": "public/images/library"
+  },
+  "seo": {
+    "categories": [
+      "Emagrecimento",
+      "Ganho de Massa e Performance",
+      "Hábitos e Estilo de Vida"
+    ],
+    "niches": [
+      "nutricao",
+      "emagrecimento",
+      "ganho-de-massa",
+      "performance-esportiva",
+      "habitos-alimentares",
+      "saude-e-bem-estar"
+    ],
+    "default_niche": "nutricao",
+    "authorized_domains": [
+      "camillebarbosa.com.br"
+    ]
+  },
+  "content": {
+    "service_links": [
+      {
+        "url": "https://camillebarbosa.com.br/#planos",
+        "description": "Planos de acompanhamento nutricional com a Camille"
+      },
+      {
+        "url": "https://camillebarbosa.com.br/#metodologia",
+        "description": "Metodologia de trabalho — como funciona o acompanhamento"
+      }
+    ],
+    "cta": {
+      "url": "https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21",
+      "text": "Agendar Consulta com a Camille",
+      "function": "Direcionar o leitor para iniciar contato via WhatsApp e agendar uma consulta com a nutricionista"
+    },
+    "brand_voice": {
+      "identity": "A Camille Barbosa é nutricionista que fala de forma direta, acolhedora e sem enrolação. Ela traduz ciência em linguagem simples, evita jargões técnicos desnecessários e sempre conecta o conteúdo com a realidade do dia a dia do leitor. O tom é de amiga especialista: empático, motivador e honesto — sem prometessas milagrosas, mas com confiança de quem entende do assunto e já ajudou muitas pessoas a transformarem seus hábitos de verdade.",
+      "brand_mentions": [
+        "Como acompanho na minha consultoria, cada corpo responde de um jeito — por isso a Camille trabalha com planos individualizados.",
+        "Na metodologia que uso com meus pacientes, a consistência vale mais do que a perfeição.",
+        "Se você quer dar o próximo passo, os planos da Camille Barbosa foram criados exatamente para isso."
+      ]
+    }
+  },
+  "research": {
+    "trends_seeds": "emagrecer rápido, dieta para ganhar massa, nutricionista online, o que comer antes do treino, cardápio semanal saudável, como perder barriga, alimentação para performance, hábitos alimentares saudáveis",
+    "apify_google_queries": [
+      "como emagrecer sem passar fome dicas nutricionista",
+      "dieta para ganho de massa muscular feminino",
+      "o que comer antes e depois do treino",
+      "como montar cardápio semanal saudável",
+      "alimentos que ajudam a emagrecer de verdade",
+      "nutrição para performance esportiva iniciantes",
+      "como mudar hábitos alimentares de forma definitiva",
+      "diferença entre dieta e reeducação alimentar",
+      "suplementos realmente valem a pena nutricionista",
+      "como perder gordura abdominal alimentação"
+    ],
+    "apify_tiktok_hashtags": [
+      "#nutricionista",
+      "#emagrecimento",
+      "#dicasdenutricao",
+      "#ganhodemassa",
+      "#alimentacaosaudavel",
+      "#reeducacaoalimentar",
+      "#performance",
+      "#dietafuncional",
+      "#saudeebemestar",
+      "#habitossaudaveis"
+    ]
+  },
+  "canva": {
+    "use_niche_image": false,
+    "cover": {
+      "template_id": "DAHFP0vpt1g",
+      "width": 2400,
+      "height": 960,
+      "elements": {
+        "title": "PBtyXFgCPM45CztC-LBFy698zKVXRL3XW",
+        "subtitle": "PBtyXFgCPM45CztC-LB8BGJlw3GGR6lxf"
+      }
+    },
+    "thumb": {
+      "template_id": "DAHFb-0c7oM",
+      "width": 800,
+      "height": 600,
+      "elements": {
+        "title": "PB7h0ks38gHb4QvV-LBFnrKpj4K2LhQ8b",
+        "subtitle": "PB7h0ks38gHb4QvV-LBDMywjBpgRXvh2L"
+      }
+    }
+  },
+  "publication": {
+    "framework": "nextjs",
+    "css_classes": {
+      "article_body": "article-body",
+      "article_cover": "article-cover",
+      "article_inline_image": "article-inline-image",
+      "blog_card": "blog-card",
+      "blog_grid": "blog-grid",
+      "blog_tag": "blog-tag",
+      "blog_thumb": "blog-thumb",
+      "blog_content": "blog-content",
+      "blog_excerpt": "blog-excerpt",
+      "blog_meta": "blog-meta",
+      "article_index": "article-index"
+    },
+    "schema_org": {
+      "author_type": "Person",
+      "author_name": "Camille Barbosa"
+    },
+    "deploy": {
+      "method": "git-push",
+      "branch": "main"
+    }
+  },
+  "image_library": {
+    "niches": [
+      {
+        "id": "emagrecimento",
+        "label": "Emagrecimento",
+        "prompt": "cartoon flat illustration of a happy woman choosing healthy food, colorful solid background, no text, clean lines, bright colors"
+      },
+      {
+        "id": "ganho-de-massa",
+        "label": "Ganho de Massa e Performance",
+        "prompt": "cartoon flat illustration of a strong person preparing a protein meal after workout, colorful solid background, no text, clean lines, vibrant colors"
+      },
+      {
+        "id": "habitos",
+        "label": "Hábitos e Estilo de Vida",
+        "prompt": "cartoon flat illustration of a person doing a healthy daily routine with nutritious food and water, colorful solid background, no text, clean lines, cheerful colors"
+      }
+    ]
+  }
+}

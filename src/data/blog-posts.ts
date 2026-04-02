@@ -18,9 +18,11 @@ import dietaEmagrecerVsGanharMassa from "./blog/dieta-para-emagrecer-vs-ganhar-m
 import entenderMacros from "./blog/como-entender-os-proprios-macros-passo-a-passo";
 import calculoMacros from "./blog/calculo-de-macros-na-pratica-estudo-de-caso";
 import checklistMacros from "./blog/checklist-calcular-ajustar-macros-dieta";
+import checklistMounjaroOzempic from "./blog/checklist-nutricional-mounjaro-ozempic";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
+  checklistMounjaroOzempic,
   checklistMacros,
   calculoMacros,
   entenderMacros,

@@ -28,9 +28,11 @@ import alimentacaoTreino from "./blog/alimentacao-antes-e-depois-do-treino";
 import errosPreTreino from "./blog/erros-alimentacao-pre-treino";
 import alimentosGorduraAbdominal from "./blog/alimentos-que-aumentam-gordura-abdominal";
 import checklistMounjaroOzempic from "./blog/checklist-nutricional-mounjaro-ozempic";
+import dietaLowCarbGuia from "./blog/dieta-low-carb-guia-completo-seguro";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
+  dietaLowCarbGuia,
   checklistMounjaroOzempic,
   alimentosGorduraAbdominal,
   errosPreTreino,

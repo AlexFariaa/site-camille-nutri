@@ -392,7 +392,48 @@ Salve o arquivo preservando todo o conteúdo original.
 
 ---
 
-## Passo 6 — Confirmação
+## Passo 6 — Corrigir sitemap.xml para datas em português
+
+O pipeline gera datas no formato `"01 Abr 2026"` (dia + mês PT + ano). O `new Date()` do JavaScript não consegue parsear esse formato e lança `RangeError: Invalid time value` no build do sitemap.xml.
+
+Leia `src/app/sitemap.ts`. Localize a linha:
+
+```ts
+lastModified: new Date(post.date),
+```
+
+Substitua o conteúdo do arquivo para incluir a função `parsePostDate` antes da função `sitemap()`:
+
+```ts
+import type { MetadataRoute } from 'next'
+import { blogPosts } from '@/data/blog-posts'
+
+const BASE_URL = 'https://camillebarbosa.com.br'
+
+const PT_MONTHS: Record<string, string> = {
+  Jan: '01', Fev: '02', Mar: '03', Abr: '04', Mai: '05', Jun: '06',
+  Jul: '07', Ago: '08', Set: '09', Out: '10', Nov: '11', Dez: '12',
+}
+
+function parsePostDate(date: string): Date {
+  const match = date.match(/^(\d{2})\s+(\w{3})\s+(\d{4})$/)
+  if (match) {
+    const [, day, monthPt, year] = match
+    const month = PT_MONTHS[monthPt]
+    if (month) return new Date(`${year}-${month}-${day}`)
+  }
+  const parsed = new Date(date)
+  return isNaN(parsed.getTime()) ? new Date() : parsed
+}
+```
+
+E troque `new Date(post.date)` por `parsePostDate(post.date)`.
+
+Salve o arquivo.
+
+---
+
+## Passo 7 — Confirmação
 
 Apresente ao usuário o seguinte resumo:
 
@@ -404,6 +445,7 @@ Apresente ao usuário o seguinte resumo:
 - `blog.config.json` — seção `a2publisher` adicionada com suas credenciais
 - `execution/send_to_publisher.py` — script de envio criado
 - `.agent/workflows/steps/04-publicacao.md` — etapa 3.4 adicionada
+- `src/app/sitemap.ts` — parser de datas em português adicionado
 
 **Como funciona a partir de agora:**
 1. O pipeline gera o artigo normalmente (etapas 1 a 3)

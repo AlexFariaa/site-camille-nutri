@@ -260,13 +260,8 @@ def main():
     parser.add_argument("--seo-plan", required=True, help="Path para o JSON do plano SEO")
     parser.add_argument(
         "--prompt-file",
-        default=".agent/prompts/article-generator-core.md",
-        help="Path para o arquivo de prompt core (default: .agent/prompts/article-generator-core.md)",
-    )
-    parser.add_argument(
-        "--brand-file",
-        default=".agent/prompts/article-generator-brand.md",
-        help="Path para o arquivo de prompt brand (default: .agent/prompts/article-generator-brand.md)",
+        default=".agent/prompts/article-generator.md",
+        help="Path para o arquivo de prompt (default: .agent/prompts/article-generator.md)",
     )
     parser.add_argument(
         "--links-file",
@@ -287,9 +282,7 @@ def main():
 
     # Carrega inputs
     seo_plan = json.loads(load_file(args.seo_plan))
-    core_prompt = load_file(args.prompt_file)
-    brand_prompt = load_file(args.brand_file)
-    prompt_content = f"{core_prompt}\n\n---\n\n{brand_prompt}"
+    prompt_content = load_file(args.prompt_file)
     links_content = load_file(args.links_file)
 
     structure_type = args.structure_type or seo_plan.get("structure_type", "tutorial")

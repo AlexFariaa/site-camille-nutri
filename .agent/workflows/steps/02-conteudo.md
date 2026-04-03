@@ -28,10 +28,9 @@ Valide o JSON gerado:
   - Se o structure_type gerado conflitar com o angulo: corrija antes de prosseguir
 - H2s sugeridos sao criativos e contextuais (nao genericos como "Introducao" ou "Conclusao")
 
-- `word_count_target` deve respeitar as faixas do `article-generator-core.md`:
-  - Tema amplo → 1.800 a 2.000 palavras
-  - Tema especifico → 600 a 1.000 palavras
-  - Se o seo_analyzer gerar um target fora dessas faixas ou inconsistente com o tema: corrija manualmente antes de prosseguir
+- `word_count_target` deve respeitar a faixa definida em `.agent/prompts/article-generator.md`:
+  - Alvo: 1.400 a 1.800 palavras (margem de ±15% — mínimo ~1.190, máximo ~2.070)
+  - Se o seo_analyzer gerar um target fora dessa faixa: corrija manualmente antes de prosseguir
 
 Se algum campo estiver invalido: corrija antes de prosseguir.
 
@@ -61,7 +60,7 @@ Exemplo para angulo Comparativo, tema "Dieta para Emagrecer vs Ganhar Massa":
 
 Execute imediatamente, sem pausar para aprovacao:
 ```
-python execution/generate_article.py --seo-plan .tmp/seo_plan.json --prompt-file .agent/prompts/article-generator-core.md --brand-file .agent/prompts/article-generator-brand.md --links-file blog/links_permitidos.md --structure-type {structure_type do seo_plan}
+python execution/generate_article.py --seo-plan .tmp/seo_plan.json --prompt-file .agent/prompts/article-generator.md --links-file blog/links_permitidos.md --structure-type {structure_type do seo_plan}
 ```
 Resultado salvo em `.tmp/article_body.html`.
 

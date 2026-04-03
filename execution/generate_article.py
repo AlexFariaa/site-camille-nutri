@@ -109,8 +109,8 @@ def validate_article(html: str, seo_plan: dict) -> list[str]:
     # 3. Contagem de palavras
     text_only = re.sub(r"<[^>]+>", " ", html)
     word_count = len(text_only.split())
-    target = seo_plan.get("word_count_target", 1800)
-    tolerance = 0.25  # 25% de tolerância
+    target = seo_plan.get("word_count_target", 1500)
+    tolerance = 0.15  # 15% de tolerância
     if word_count < target * (1 - tolerance):
         warnings.append(f"Artigo muito curto: {word_count} palavras (alvo: {target})")
     elif word_count > target * (1 + tolerance):
@@ -229,8 +229,9 @@ IMPORTANTE:
 4. Siga TODOS os anti-patterns proibidos da seção 2 do prompt
 5. Use os padrões de H2 aprovados da seção 3
 6. Inclua 2-4 links internos do blog de forma natural
-7. Termine com CTA provocativo e link para openModal()
-8. OBRIGATORIO: o artigo deve ter NO MINIMO {int(seo_plan['word_count_target'] * 0.85)} palavras e NO MAXIMO {int(seo_plan['word_count_target'] * 1.15)} palavras. Expanda cada secao com exemplos praticos, listas detalhadas e paragrafos explicativos para atingir esse volume. NAO resuma — desenvolva."""
+7. Não use travessões no conteúdo do artigo
+8. Termine com CTA provocativo e link para openModal()
+9. OBRIGATORIO: o artigo deve ter NO MINIMO {int(seo_plan['word_count_target'] * 0.85)} palavras e NO MAXIMO {int(seo_plan['word_count_target'] * 1.15)} palavras. Expanda cada secao com exemplos praticos, listas detalhadas e paragrafos explicativos para atingir esse volume. NAO resuma — desenvolva."""
 
     response = client.chat.completions.create(
         model="gpt-4.1",

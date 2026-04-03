@@ -456,6 +456,10 @@ Apresente ao usuário o seguinte resumo:
 Configure o repositório e o framework na aba "Gerador de Posts" → Integração do A2 Publisher.
 Ao clicar "Publicar no GitHub" no editor, o post é empurrado direto ao repo do site.
 
+**Importante (Next.js com `src/data/blog-posts.ts`):**
+No campo de framework do blog, selecione **`nextjs`**.
+Nao use `nextjs-ts-data`, pois esse modo gera campos legados (`seoTitle`, `publishedAt`) e pode quebrar o contrato `BlogPost` do projeto.
+
 ---
 
 **Fim do setup.**

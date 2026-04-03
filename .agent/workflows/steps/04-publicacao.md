@@ -40,26 +40,16 @@ export default post;
 - Leia `.tmp/article_body.html` para: conteudo do artigo (html completo)
 - Imagens geradas em `public/images/blog/`
 
-## Sub-passo 4.2 — Atualizar src/data/blog-posts.ts
+## Sub-passo 4.2 — Regerar indice automaticamente
 
-Abra `src/data/blog-posts.ts`:
+Nao edite `src/data/blog-posts.ts` manualmente.
 
-**1. Adicione o import no topo (apos os outros imports):**
-```typescript
-import {slug} from "./blog/{slug}";
+Execute:
+```
+node scripts/generate-blog-index.mjs
 ```
 
-**2. Adicione no array `blogPosts` (no topo da lista para aparecer primeiro):**
-```typescript
-export const blogPosts: BlogPost[] = [
-  {slugVariable},  // ← NOVO ARTIGO
-  calculoMacros,
-  entenderMacros,
-  ...
-];
-```
-
-**CRITICO:** Sem adicionar no array, o artigo nao aparecera no blog mesmo que o arquivo exista. O import e necessario mas insuficiente — e o array que controla a exibicao.
+**CRITICO:** Esse script escaneia `src/data/blog/*.ts` e atualiza `src/data/blog-posts.ts` automaticamente.
 
 ## Sub-passo 4.3 — Atualizar blog/links_permitidos.md
 

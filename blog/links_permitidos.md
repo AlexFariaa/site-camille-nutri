@@ -40,6 +40,14 @@ Indice de posts publicados no blog. Usado pelo agente para inserir links interno
   * **Título/Tema:** Checklist Nutricional para Quem Está Iniciando o Uso de Mounjaro ou Ozempic
   * **Quando usar:** Sugerir quando o leitor menciona uso de Mounjaro (tirzepatida) ou Ozempic (semaglutida), quer saber o que comer durante o tratamento, relata sintomas como náusea, fraqueza ou perda de cabelo com o medicamento, ou busca orientação nutricional prática para complementar o emagrecimento com GLP-1. Relevante em artigos sobre emagrecimento com medicação, ajuste alimentar, controle de apetite e sustentabilidade do resultado.
 
+* **`/blog/jejum-intermitente-como-fazer-com-seguranca`**
+  * **Título/Tema:** Jejum Intermitente: Guia Completo e Seguro — Quem Pode, Quem Não Pode e Como Fazer
+  * **Quando usar:** Sugerir quando o leitor menciona jejum intermitente, quer saber se pode fazer jejum, tem dúvidas sobre protocolos (12/12, 16/8), relata dificuldades como fome excessiva, tontura ou falta de resultado com o jejum, ou pergunta sobre como quebrar o jejum corretamente. Relevante em artigos sobre emagrecimento, hábitos alimentares, controle de apetite, tipos de dieta e planejamento alimentar.
+
+* **`/blog/dieta-low-carb-guia-completo-seguro`**
+  * **Título/Tema:** Dieta Low-Carb: Guia Completo de Cuidados para Fazer com Segurança
+  * **Quando usar:** Sugerir quando o leitor menciona dieta low-carb, quer cortar carboidratos para emagrecer, tem dúvidas sobre o que comer na low-carb, relata dificuldades como cansaço, intestino preso ou recaídas na dieta, ou pergunta sobre quantidade de carboidratos por dia. Relevante em artigos sobre emagrecimento, hábitos alimentares, tipos de dieta, gordura abdominal e planejamento de cardápio.
+
 ## Ganho de Massa e Performance
 
 * **`/blog/erros-alimentacao-pre-treino`**

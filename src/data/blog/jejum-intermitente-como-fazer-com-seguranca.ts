@@ -1,6 +1,17 @@
-<img src="/images/blog/jejum-intermitente-como-fazer-com-seguranca.avif" alt="Mesa com alimentos leves e um relógio marcando o tempo, ilustrando o conceito de jejum intermitente" title="Jejum intermitente explicado de forma prática e segura" class="article-cover">
+import type { BlogPost } from "@/data/blog-posts";
 
-<p><strong>Se você já pensou em tentar jejum intermitente achando que é só “ficar sem comer” e pronto, cuidado: esse é o atalho mais rápido para passar mal, perder massa magra ou até engordar de novo.</strong> O que eu vejo no consultório, na prática, é que a maioria começa pelo motivo errado, sem entender como funciona e sem saber se realmente precisa ou pode fazer.</p>
+const post: BlogPost = {
+  slug: 'jejum-intermitente-como-fazer-com-seguranca',
+  title: 'Jejum Intermitente: Guia Completo e Seguro | Camille Barbosa',
+  metaTitle: 'Jejum Intermitente: Guia Completo e Seguro | Camille Barbosa',
+  excerpt: 'Jejum intermitente: saiba quem pode fazer, quem deve evitar e como começar com segurança. Guia prático da nutricionista.',
+  date: '03 Abr 2026',
+  category: 'Hábitos e Estilo de Vida',
+  author: 'Camille Barbosa',
+  readTime: '6 min de leitura',
+  coverImage: '/images/blog/jejum-intermitente-como-fazer-com-seguranca.avif',
+  thumbImage: '/images/blog/thumb-jejum-intermitente-como-fazer-com-seguranca.avif',
+  content: `<p><strong>Se você já pensou em tentar jejum intermitente achando que é só “ficar sem comer” e pronto, cuidado: esse é o atalho mais rápido para passar mal, perder massa magra ou até engordar de novo.</strong> O que eu vejo no consultório, na prática, é que a maioria começa pelo motivo errado, sem entender como funciona e sem saber se realmente precisa ou pode fazer.</p>
 <p>Antes de decidir se o jejum intermitente é para você, vale entender o que ele realmente entrega (sem promessas milagrosas) e como fazer de um jeito seguro, sem cair nas armadilhas mais comuns que rodam por aí. Eu vou te mostrar, passo a passo, o que funciona de verdade para iniciantes e para quem busca emagrecimento, sem complicar nem romantizar.</p>
 
 <nav class="article-index" aria-label="Índice do artigo">
@@ -88,4 +99,7 @@
 <p>Quando o jejum intermitente é bem feito, alinhando protocolo, alimentação correta e escuta do corpo, ele pode, sim, ajudar no emagrecimento, melhorar a relação com a comida e dar mais praticidade para o dia a dia. Mas não existe mágica: a mudança real vem da soma de escolhas, não do jejum sozinho.</p>
 <p>O que muda para meus pacientes quando aplicam o passo a passo? O corpo responde melhor, a fome desregulada diminui, a energia aumenta. Não é sobre “passar fome para secar”, e sim sobre aprender a comer na hora certa, com qualidade e prazer. O resultado aparece no espelho e nos exames, principalmente, no bem-estar.</p>
 <p>Se você quer dar o próximo passo, os <a href="https://camillebarbosa.com.br/#planos" title="Planos de acompanhamento nutricional personalizados com Camille Barbosa">planos da Camille Barbosa</a> foram criados exatamente para ajustar o jejum (ou outra estratégia) ao seu perfil, rotina e objetivo. Personalização é o que faz diferença de verdade. Pronto para testar o que funciona no SEU corpo?</p>
-<p><a href="https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21" title="Agendar consulta de nutrição com a Camille Barbosa pelo WhatsApp">Agendar Consulta com a Camille</a></p>
+<p><a href="https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21" title="Agendar consulta de nutrição com a Camille Barbosa pelo WhatsApp">Agendar Consulta com a Camille</a></p>`,
+};
+
+export default post;

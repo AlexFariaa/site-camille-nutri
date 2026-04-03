@@ -12,45 +12,45 @@ export type BlogPost = {
   content: string;
 };
 
-import recomposicaoCorporal from "./blog/recomposicao-corporal-como-perder-gordura-e-ganhar-massa";
-import emagrecer10reais from "./blog/emagrecer-gastando-pouco-cardapio-10-reais";
-import dietaEmagrecerVsGanharMassa from "./blog/dieta-para-emagrecer-vs-ganhar-massa";
-import entenderMacros from "./blog/como-entender-os-proprios-macros-passo-a-passo";
-import calculoMacros from "./blog/calculo-de-macros-na-pratica-estudo-de-caso";
-import checklistMacros from "./blog/checklist-calcular-ajustar-macros-dieta";
-import errosWhey from "./blog/erros-na-escolha-do-whey";
-import dietaHiperproteicaErros from "./blog/dieta-hiperproteica-erros-e-acertos";
-import alimentacaoTirzepatida from "./blog/alimentacao-tratamento-tirzepatida-semaglutida";
-import folhasVerdesVontade from "./blog/folhas-verdes-a-vontade-explicacao-cientifica";
-import errosAoEmagrecer from "./blog/erros-ao-emagrecer-com-pouco-dinheiro";
-import recomposicaoCorporalPratica from "./blog/recomposicao-corporal-na-pratica-estudo-de-caso";
-import alimentacaoTreino from "./blog/alimentacao-antes-e-depois-do-treino";
-import errosPreTreino from "./blog/erros-alimentacao-pre-treino";
-import alimentosGorduraAbdominal from "./blog/alimentos-que-aumentam-gordura-abdominal";
-import checklistMounjaroOzempic from "./blog/checklist-nutricional-mounjaro-ozempic";
-import dietaLowCarbGuia from "./blog/dieta-low-carb-guia-completo-seguro";
-import jejumIntermitente from "./blog/jejum-intermitente-como-fazer-com-seguranca";
+import dietaLowCarbGuiaCompletoSeguro from "./blog/dieta-low-carb-guia-completo-seguro";
+import jejumIntermitenteComoFazerComSeguranca from "./blog/jejum-intermitente-como-fazer-com-seguranca";
+import checklistNutricionalMounjaroOzempic from "./blog/checklist-nutricional-mounjaro-ozempic";
+import alimentacaoAntesEDepoisDoTreino from "./blog/alimentacao-antes-e-depois-do-treino";
+import alimentacaoTratamentoTirzepatidaSemaglutida from "./blog/alimentacao-tratamento-tirzepatida-semaglutida";
+import alimentosQueAumentamGorduraAbdominal from "./blog/alimentos-que-aumentam-gordura-abdominal";
+import checklistCalcularAjustarMacrosDieta from "./blog/checklist-calcular-ajustar-macros-dieta";
+import dietaHiperproteicaErrosEAcertos from "./blog/dieta-hiperproteica-erros-e-acertos";
+import errosAlimentacaoPreTreino from "./blog/erros-alimentacao-pre-treino";
+import errosAoEmagrecerComPoucoDinheiro from "./blog/erros-ao-emagrecer-com-pouco-dinheiro";
+import errosNaEscolhaDoWhey from "./blog/erros-na-escolha-do-whey";
+import folhasVerdesAVontadeExplicacaoCientifica from "./blog/folhas-verdes-a-vontade-explicacao-cientifica";
+import recomposicaoCorporalNaPraticaEstudoDeCaso from "./blog/recomposicao-corporal-na-pratica-estudo-de-caso";
+import calculoDeMacrosNaPraticaEstudoDeCaso from "./blog/calculo-de-macros-na-pratica-estudo-de-caso";
+import comoEntenderOsPropriosMacrosPassoAPasso from "./blog/como-entender-os-proprios-macros-passo-a-passo";
+import dietaParaEmagrecerVsGanharMassa from "./blog/dieta-para-emagrecer-vs-ganhar-massa";
+import emagrecerGastandoPoucoCardapio10Reais from "./blog/emagrecer-gastando-pouco-cardapio-10-reais";
+import recomposicaoCorporalComoPerderGorduraEGanharMassa from "./blog/recomposicao-corporal-como-perder-gordura-e-ganhar-massa";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
-  jejumIntermitente,
-  dietaLowCarbGuia,
-  checklistMounjaroOzempic,
-  alimentosGorduraAbdominal,
-  errosPreTreino,
-  alimentacaoTreino,
-  recomposicaoCorporalPratica,
-  errosAoEmagrecer,
-  folhasVerdesVontade,
-  alimentacaoTirzepatida,
-  dietaHiperproteicaErros,
-  errosWhey,
-  checklistMacros,
-  calculoMacros,
-  entenderMacros,
-  dietaEmagrecerVsGanharMassa,
-  emagrecer10reais,
-  recomposicaoCorporal,
+  dietaLowCarbGuiaCompletoSeguro,
+  jejumIntermitenteComoFazerComSeguranca,
+  checklistNutricionalMounjaroOzempic,
+  alimentacaoAntesEDepoisDoTreino,
+  alimentacaoTratamentoTirzepatidaSemaglutida,
+  alimentosQueAumentamGorduraAbdominal,
+  checklistCalcularAjustarMacrosDieta,
+  dietaHiperproteicaErrosEAcertos,
+  errosAlimentacaoPreTreino,
+  errosAoEmagrecerComPoucoDinheiro,
+  errosNaEscolhaDoWhey,
+  folhasVerdesAVontadeExplicacaoCientifica,
+  recomposicaoCorporalNaPraticaEstudoDeCaso,
+  calculoDeMacrosNaPraticaEstudoDeCaso,
+  comoEntenderOsPropriosMacrosPassoAPasso,
+  dietaParaEmagrecerVsGanharMassa,
+  emagrecerGastandoPoucoCardapio10Reais,
+  recomposicaoCorporalComoPerderGorduraEGanharMassa,
   // novos artigos: adicionar 1 item no array aqui
 ];
 

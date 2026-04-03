@@ -1,10 +1,16 @@
-const post = {
+import type { BlogPost } from "@/data/blog-posts";
+
+const post: BlogPost = {
   slug: 'dieta-low-carb-guia-completo-seguro',
   title: 'Dieta Low-Carb: Guia Completo e Seguro | Camille Barbosa',
-  seoTitle: 'Dieta Low-Carb: Guia Completo e Seguro | Camille Barbosa',
-  seoDescription: 'Dieta low-carb: saiba como fazer com segurança, evitar erros comuns e emagrecer sem comprometer a saúde.',
+  metaTitle: 'Dieta Low-Carb: Guia Completo e Seguro | Camille Barbosa',
+  excerpt: 'Dieta low-carb: saiba como fazer com segurança, evitar erros comuns e emagrecer sem comprometer a saúde.',
+  date: '03 Abr 2026',
+  category: 'Emagrecimento',
+  author: 'Camille Barbosa',
+  readTime: '7 min de leitura',
   coverImage: 'https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-low-carb-guia-completo-seguro/cover.avif',
-  publishedAt: '2026-04-03T04:32:06.199Z',
+  thumbImage: 'https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-low-carb-guia-completo-seguro/thumb.avif',
   content: `<img src="https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-low-carb-guia-completo-seguro/dieta-low-carb-guia-completo-seguro.avif" alt="Mesa com alimentos típicos de uma dieta low-carb: ovos, abacate, salada de folhas verdes, azeite, peito de frango grelhado e castanhas, organizados de maneira apetitosa" title="Alimentos para uma dieta low-carb segura e prática" class="article-cover">
 
 <p><strong>Se você acha que dieta low-carb é só cortar pão e arroz, sinto te dizer: você está começando do jeito errado.</strong> O que vejo na prática é gente empolgada que tira todos os carboidratos por conta própria, passa fome, estraga o humor e acaba voltando ao ponto de partida, ou até pior.</p>

@@ -70,13 +70,13 @@ O JSON deve ter esta estrutura exata:
 {{
   "primary_keyword": "keyword principal em português (2-4 palavras, alto volume de busca)",
   "secondary_keywords": ["keyword2", "keyword3", "keyword4", "keyword5"],
-  "meta_title": "Título otimizado para SEO (max 60 chars) | {site['name']}",
-  "meta_description": "Descrição meta persuasiva com keyword (max 155 chars)",
+  "meta_title": "Título otimizado para SEO (max 42 chars) | {site['name']}",
+  "meta_description": "Descrição meta persuasiva com keyword (max 150 chars)",
   "slug": "slug-em-kebab-case-sem-acentos",
   "category": "Uma de: {categories_str}",
   "niche": "Uma de: {niches_str}",
   "structure_type": "Uma de: tutorial, guia, estudo-de-caso, comparativo, erros-e-acertos, infografico, lista, checklist, jornada",
-  "word_count_target": 1800,
+  "word_count_target": 1500,
   "h2_suggestions": [
     "Sugestão de H2 contextual e criativo (seguindo padrões aprovados)",
     "Outro H2 com gancho emocional",
@@ -90,7 +90,7 @@ Regras:
 - O meta_title deve ter a keyword principal
 - A meta_description deve ter a keyword e uma proposta de valor clara
 - Os H2 sugeridos devem ser CONTEXTUAIS e CRIATIVOS, nunca genéricos
-- Se o tema for amplo, word_count_target = 1800-2000. Se específico, 600-1000
+- word_count_target = 1000-1500. (margem de ±15%, mínimo ~850, máximo ~1.725)
 - Escolha structure_type baseado no ângulo do tema:
   - tutorial: como fazer X passo a passo, execução prática
   - guia: visão estratégica ampla, pilares de um tema
@@ -110,7 +110,7 @@ Blog: {site['name']} ({site['description']})
 Gere o JSON de SEO para este tema."""
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4.1",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},

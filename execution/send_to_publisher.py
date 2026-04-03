@@ -93,9 +93,13 @@ if not title or not slug:
 # ── Upload de imagens inline ──────────────────────────────────
 # Detecta src que referenciam arquivos locais de imagem inline
 # Padrão gerado pelo pipeline: /images/blog/{slug}-inline-N.avif
+# 
+# FLUXO: Arquivo local → Supabase via /api/upload-inline-image → URL pública Supabase
+# A URL pública retornada substitui o src local no HTML antes de enviar ao A2 Publisher.
+# Assim, o post final contém referências ao Supabase, não a paths locais.
 
 def upload_inline_image(local_path: str, filename: str) -> str | None:
-    """Faz upload de uma imagem inline e retorna a URL pública, ou None se falhar."""
+    """Faz upload de uma imagem inline para Supabase e retorna a URL pública, ou None se falhar."""
     try:
         with open(local_path, "rb") as img_file:
             res = requests.post(
@@ -106,6 +110,7 @@ def upload_inline_image(local_path: str, filename: str) -> str | None:
                 timeout=60,
             )
         if res.status_code == 200:
+            # Retorna URL pública do Supabase
             return res.json().get("url")
         else:
             print(f"  ⚠ Upload falhou ({res.status_code}): {res.text[:200]}")
@@ -131,20 +136,23 @@ if inline_srcs:
         print(f"  → Enviando {filename}...")
         public_url = upload_inline_image(local_path, filename)
         if public_url:
+            # Substitui path local pela URL pública do Supabase no HTML
             raw_html = raw_html.replace(f'src="{src}"', f'src="{public_url}"')
-            print(f"    ✓ {public_url}")
+            print(f"    ✓ URL Supabase: {public_url}")
         else:
             print(f"    ⚠ Falha no upload de {filename} — src mantido no HTML.")
 else:
     print("→ Nenhuma imagem inline local encontrada no HTML.")
 
 # ── Upload da imagem de capa (opcional) ──────────────────────
+# FLUXO: Arquivo local → Supabase via /api/upload-image (type="cover") → URL pública Supabase
+# A URL pública é adicionada ao payload que será enviado ao A2 Publisher como "cover_image_url".
 
 cover_image_url = None
 cover_path = f"public/images/blog/{slug}.avif"
 
 if os.path.exists(cover_path):
-    print(f"\n→ Enviando imagem de capa: {cover_path}")
+    print(f"\n→ Enviando imagem de capa para Supabase: {cover_path}")
     try:
         with open(cover_path, "rb") as img_file:
             upload_res = requests.post(
@@ -155,8 +163,9 @@ if os.path.exists(cover_path):
                 timeout=60,
             )
         if upload_res.status_code == 200:
+            # Armazena URL pública do Supabase para adicionar ao payload
             cover_image_url = upload_res.json().get("url")
-            print(f"  ✓ Imagem enviada: {cover_image_url}")
+            print(f"  ✓ URL Supabase (capa): {cover_image_url}")
         else:
             print(f"  ⚠ Upload falhou ({upload_res.status_code}): {upload_res.text[:200]}")
             print("  Continuando sem imagem de capa...")
@@ -167,6 +176,8 @@ else:
     print(f"\n→ Imagem de capa não encontrada em {cover_path}, pulando upload.")
 
 # ── Upload da miniatura (opcional) ───────────────────────────
+# FLUXO: Arquivo local → Supabase via /api/upload-image (type="thumb") → URL pública Supabase
+# A URL pública é adicionada ao payload que será enviado ao A2 Publisher como "thumb_image_url".
 
 thumb_image_url = None
 thumb_candidates = [
@@ -176,7 +187,7 @@ thumb_candidates = [
 thumb_path = next((p for p in thumb_candidates if os.path.exists(p)), None)
 
 if thumb_path:
-    print(f"\n→ Enviando miniatura: {thumb_path}")
+    print(f"\n→ Enviando miniatura para Supabase: {thumb_path}")
     try:
         thumb_filename = os.path.basename(thumb_path)
         with open(thumb_path, "rb") as img_file:
@@ -188,8 +199,9 @@ if thumb_path:
                 timeout=60,
             )
         if upload_res.status_code == 200:
+            # Armazena URL pública do Supabase para adicionar ao payload
             thumb_image_url = upload_res.json().get("url")
-            print(f"  ✓ Miniatura enviada: {thumb_image_url}")
+            print(f"  ✓ URL Supabase (thumb): {thumb_image_url}")
         else:
             print(f"  ⚠ Upload falhou ({upload_res.status_code}): {upload_res.text[:200]}")
     except Exception as e:
@@ -198,14 +210,17 @@ else:
     print("\n→ Miniatura não encontrada (tentado: thumb-{slug}.avif e {slug}-thumb.avif), pulando upload.")
 
 # ── Enviar post ao A2 Publisher ───────────────────────────────
+# IMPORTANTE: O raw_html já contém URLs do Supabase (não paths locais).
+# As URLs de capa e miniatura (também do Supabase) são enviadas separadamente no payload.
+# Assim, todos os arquivos de imagem estão hospedados no Supabase, não localmente.
 
-print(f"\n→ Enviando post '{title}' ao A2 Publisher...")
+print(f"\n→ Enviando post '{title}' ao A2 Publisher com imagens do Supabase...")
 
 payload = {
     "site_id":         SITE_ID,
     "title":           title,
     "slug":            slug,
-    "raw_html":        raw_html,
+    "raw_html":        raw_html,  # Contém URLs Supabase para imagens inline
     "seo_title":       seo_title,
     "seo_description": seo_description,
     "category":        category,
@@ -213,11 +228,12 @@ payload = {
     "read_time":       read_time,
 }
 
+# Adiciona URLs do Supabase para capa e miniatura
 if cover_image_url:
-    payload["cover_image_url"] = cover_image_url
+    payload["cover_image_url"] = cover_image_url  # URL Supabase
 
 if thumb_image_url:
-    payload["thumb_image_url"] = thumb_image_url
+    payload["thumb_image_url"] = thumb_image_url  # URL Supabase
 
 import_headers = {**HEADERS, "Content-Type": "application/json"}
 

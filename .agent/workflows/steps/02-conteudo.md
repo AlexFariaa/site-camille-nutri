@@ -6,7 +6,7 @@ description:
 
 Input: tema confirmado + angulo escolhido (vindo do banco, do usuario, ou da pesquisa).
 
-## Passo 2.1 — Plano SEO
+## Passo 2.1, Plano SEO
 
 Execute passando o tema E o angulo como contexto:
 ```
@@ -16,8 +16,10 @@ Resultado salvo em `.tmp/seo_plan.json`.
 
 Valide o JSON gerado:
 - Slug sem acentos ou caracteres especiais
-- `meta_title` com menos de 60 caracteres (sem o sufixo " | {site.name}" de `blog.config.json`)
-- `meta_description` com menos de 160 caracteres
+- `meta_title` com no máximo 42 caracteres (sem o sufixo " | Camille Barbosa", o total renderizado no Google deve ficar dentro de 60 chars)
+- `meta_description` com no máximo 150 caracteres
+- `primary_keyword` presente no meta_title e no início da meta_description
+- `lsi_keywords`: lista de 4 a 6 termos semanticamente relacionados à keyword principal (sinônimos, perguntas frequentes, subtemas). Se ausente ou com menos de 4 termos: complemente antes de prosseguir.
 - `structure_type` coerente com o angulo escolhido:
   - Tutorial → structure_type deve indicar passo a passo / guia
   - Estudo de caso → structure_type deve indicar narrativa / caso real
@@ -29,25 +31,25 @@ Valide o JSON gerado:
 - H2s sugeridos sao criativos e contextuais (nao genericos como "Introducao" ou "Conclusao")
 
 - `word_count_target` deve respeitar a faixa definida em `.agent/prompts/article-generator.md`:
-  - Alvo: 1.000 a 1.500 palavras (margem de ±15% — mínimo ~850, máximo ~1.725)
+  - Alvo: 1.000 a 1.500 palavras (margem de ±15%, mínimo ~850, máximo ~1.725)
   - Se o seo_analyzer gerar um target fora dessa faixa: corrija manualmente antes de prosseguir
 
 Se algum campo estiver invalido: corrija antes de prosseguir.
 
-## Passo 2.1b — Titulo e Subtitulo da Capa
+## Passo 2.1b, Titulo e Subtitulo da Capa
 
 Apos validar o SEO plan, gere o titulo e subtitulo que serao usados na capa (Canva) e miniatura.
 
 **Regras do titulo:**
 - Nomeia o assunto com forca: direto, concreto e capaz de despertar interesse imediato
-- Sintese do tema central — deve fazer sentido isolado, sem depender do subtitulo
+- Sintese do tema central: deve fazer sentido isolado, sem depender do subtitulo
 - Favorece indexacao: inclui a keyword principal ou variacao proxima
 - MAIUSCULAS, max ~35 chars (precisa ser legivel em imagem)
 
 **Regras do subtitulo:**
 - Complementa o titulo com o detalhe ou promessa que nao coube nele
 - Contextualiza: indica o angulo, o publico ou o beneficio concreto
-- Nao repete palavras do titulo — acrescenta informacao nova
+- Nao repete palavras do titulo, acrescenta informacao nova
 - Title case, max ~55 chars
 
 Salve ambos no `.tmp/seo_plan.json` como `cover_title` e `cover_subtitle`.
@@ -56,7 +58,7 @@ Exemplo para angulo Comparativo, tema "Dieta para Emagrecer vs Ganhar Massa":
 - cover_title: "EMAGRECER OU GANHAR MASSA?"
 - cover_subtitle: "Como escolher a dieta certa para o seu objetivo"
 
-## Passo 2.2 — Geracao do Artigo
+## Passo 2.2, Geracao do Artigo
 
 Execute imediatamente, sem pausar para aprovacao:
 ```
@@ -66,8 +68,8 @@ Resultado salvo em `.tmp/article_body.html`.
 
 O script executa validacao automatica. Verifique os avisos:
 - Keyword presente no H1, intro e pelo menos 1 H2
+- LSI keywords do seo_plan distribuídas ao longo do artigo (H2s, H3s, primeiras frases de parágrafo)
 - Contagem de palavras dentro da faixa alvo
-- Nenhum link externo nao autorizado
 - H2s nao sao genericos
 - 2-4 links internos presentes
 
@@ -76,7 +78,7 @@ O script executa validacao automatica. Verifique os avisos:
 
 Se houver avisos criticos: corrija o artigo antes de mostrar ao usuario.
 
-## GATE 2 — Apresentacao ao usuario
+## GATE 2, Apresentacao ao usuario
 
 Mostre ao usuario apenas o resumo do SEO plan:
 
@@ -84,6 +86,7 @@ Mostre ao usuario apenas o resumo do SEO plan:
 |-------|-------|
 | Slug | {slug} |
 | Keyword | {primary_keyword} |
+| LSI Keywords | {lsi_keywords, separadas por vírgula} |
 | Angulo | {angulo escolhido} |
 | Tipo de texto | {descricao do structure_type em linguagem clara} |
 | Titulo SEO | {meta_title} |

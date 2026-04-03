@@ -53,6 +53,10 @@ A abertura define se o leitor continua. Vá direto à dor ou à provocação. Nu
 
 > "Em um cenário onde a nutrição ganhou destaque, entender como..."
 
+> "não é sobre seguir regras rígidas de fora, mas sobre entender o que faz sentido para sua rotina, corpo e mente. O resto é barulho."
+
+> "Não é sobre dieta sofrida ou abrir mão do sabor, é sobre saber onde investir, o que priorizar e como transformar o básico em aliado do seu objetivo"
+
 ---
 
 ## 4. H2s: Fórmulas e Exemplos Reais
@@ -79,17 +83,20 @@ Use estes padrões como base, nunca copie os exemplos literalmente:
 
 ## 5. SEO e Estrutura Técnica
 
-**Keyword:**
+**Keyword principal:**
 - Obrigatória no H1 (ou variação próxima)
 - Nos primeiros 2-3 parágrafos
 - Em pelo menos 1 H2, de forma natural
 - A cada 200-300 palavras no corpo, use variações e sinônimos, nunca repita artificialmente
 
+**Palavras-chave secundárias (LSI):**
+Antes de escrever, identifique 4 a 6 termos semanticamente relacionados à keyword principal (sinônimos, perguntas frequentes, subtemas do assunto). Distribua-os organicamente ao longo do texto, priorizando H2s, H3s e primeiras frases de parágrafo. Nunca agrupe todas em um único trecho.
+
 **Contagem de palavras:** 1.000 a 1.500 palavras. Margem de ±15% (mínimo ~850, máximo ~1.725).
 
 **AEO:** responda a pergunta implícita do H2 na primeira frase após ele. Estruture listas e passos de forma que possam virar featured snippets.
 
-**Meta description:** máximo 160 caracteres, com keyword + proposta de valor.
+**Meta description:** máximo 150 caracteres, com keyword + proposta de valor.
 
 **HTML semântico:**
 - `<h1>`, único, apenas o título
@@ -117,7 +124,7 @@ Use estes padrões como base, nunca copie os exemplos literalmente:
 <a href="https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21" title="Agendar consulta de nutrição com a Camille Barbosa pelo WhatsApp">Agendar Consulta com a Camille</a>
 ```
 
-**Title tag:** `{Titulo do Post} | Camille Barbosa`
+**Title tag:** `{Titulo do Post} | Camille Barbosa` — o título do post deve ter no máximo 42 caracteres. O sufixo " | Camille Barbosa" (18 chars) é fixo, totalizando até 60 chars renderizados no Google.
 
 ---
 
@@ -202,4 +209,4 @@ O artigo gerado deve conter APENAS o HTML que vai dentro de `<div class="article
 - Nunca "clique aqui"
 - Nunca inventar links que não existam
 - Nunca `target="_blank"` em links internos do blog
-- Nunca links externos não autorizados
+- Links externos apenas para fontes científicas/institucionais (PubMed, CFN, SBEM, Ministério da Saúde), apontando para página ou estudo específico — nunca para homepage

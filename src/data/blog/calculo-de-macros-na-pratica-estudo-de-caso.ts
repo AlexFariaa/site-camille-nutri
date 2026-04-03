@@ -69,7 +69,7 @@ const post: BlogPost = {
   </li>
   <li>
     <strong>2. Registrar sem paranoia (mas com atenção)</strong>
-    <p>Planilha, aplicativo ou bloco de notas: escolha a ferramenta que funciona para você. Henrique usou uma planilha simples (nada de app pago) para anotar refeições e perceber padrões. Não é sobre pesar tudo até a última folha de alface, mas sobre entender onde estão os excessos e os acertos. Esse autoconhecimento acelera o ajuste da dieta e evita recaídas no "modo automático".</p>
+    <p>Planilha, aplicativo ou bloco de notas: escolha a ferramenta que funciona para você. Henrique usou uma planilha simples (nada de app pago) para anotar refeições e perceber padrões. Mais do que pesar cada folha de alface, o importante é ganhar consciência sobre o que funciona e onde estão os exageros. Esse autoconhecimento facilita o ajuste da rota e evita que você caia naquela cilada de comer sem perceber.</p>
   </li>
   <li>
     <strong>3. Ajustar a estratégia conforme a vida muda (e não o contrário)</strong>

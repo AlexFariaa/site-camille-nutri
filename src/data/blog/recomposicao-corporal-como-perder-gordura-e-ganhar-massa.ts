@@ -97,7 +97,7 @@ A verdade dura: <strong>quem busca recomposição corporal sem ajustar alimenta�
   </li>
 </ul>
 <blockquote>
-Recomposição corporal não é sobre seguir regras rígidas de fora, mas sobre entender o que faz sentido para sua rotina, corpo e mente. O resto é barulho.</blockquote>
+Cuidar do seu corpo e da sua mente é descobrir o que realmente se encaixa na sua vida, sem o peso de regras que não foram feitas para você. Quando escolhemos o que nos faz bem e respeitamos nosso próprio ritmo, todo o resto vira apenas um barulho que não precisa mais da nossa atenção..</blockquote>
 <p>Se quiser aprofundar em como montar uma rotina alimentar eficiente e obter um plano sob medida, conheça a <a href="https://camillebarbosa.com.br/#metodologia" title="Metodologia de acompanhamento nutricional da Camille Barbosa">metodologia de trabalho da Camille</a>, sempre lembrando: suplemento não substitui comida de verdade.</p>
 
 <h2 id="de-primeiros-passos-a-resultado-real-o-que-falta-para-voce-transformar-seu-corpo">De primeiros passos a resultado real: o que falta para você transformar seu corpo?</h2>

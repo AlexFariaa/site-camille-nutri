@@ -1,3 +1,7 @@
+---
+description: 
+---
+
 # Step 02: SEO + Geracao do Artigo
 
 Input: tema confirmado + angulo escolhido (vindo do banco, do usuario, ou da pesquisa).
@@ -23,6 +27,11 @@ Valide o JSON gerado:
   - Comparativo → structure_type deve indicar comparacao
   - Se o structure_type gerado conflitar com o angulo: corrija antes de prosseguir
 - H2s sugeridos sao criativos e contextuais (nao genericos como "Introducao" ou "Conclusao")
+
+- `word_count_target` deve respeitar as faixas do `article-generator-core.md`:
+  - Tema amplo → 1.800 a 2.000 palavras
+  - Tema especifico → 600 a 1.000 palavras
+  - Se o seo_analyzer gerar um target fora dessas faixas ou inconsistente com o tema: corrija manualmente antes de prosseguir
 
 Se algum campo estiver invalido: corrija antes de prosseguir.
 
@@ -63,33 +72,35 @@ O script executa validacao automatica. Verifique os avisos:
 - H2s nao sao genericos
 - 2-4 links internos presentes
 
+**Validacao adicional obrigatoria (fazer apos o script):**
+- Buscar travessao (—) no HTML gerado: nenhum deve aparecer em nenhuma parte do texto. Se encontrado: substitua por virgula, ponto, dois-pontos ou reescreva a frase. Nunca use travessao.
+
 Se houver avisos criticos: corrija o artigo antes de mostrar ao usuario.
 
-## GATE 2 — Apresentacao combinada
+## GATE 2 — Apresentacao ao usuario
 
-Mostre ao usuario em uma unica resposta:
+Mostre ao usuario apenas o resumo do SEO plan:
 
-**Bloco 1 — Resumo do SEO plan:**
 | Campo | Valor |
 |-------|-------|
 | Slug | {slug} |
 | Keyword | {primary_keyword} |
-| Angulo | {angulo escolhido — ex: Tutorial, Estudo de caso, Erros e acertos, Infografico, Checklist, Comparativo, Guia estrategico} |
-| Tipo de texto | {descricao do structure_type em linguagem clara — ex: "Guia passo a passo", "Artigo de erros com solucoes", "Narrativa de caso real", "Listicle de dicas"} |
+| Angulo | {angulo escolhido} |
+| Tipo de texto | {descricao do structure_type em linguagem clara} |
 | Titulo SEO | {meta_title} |
 | Descricao | {meta_description} |
-| H2s sugeridos | {lista dos H2s} |
+| H2s | {lista dos H2s} |
 | **Titulo da capa** | {cover_title} |
 | **Subtitulo da capa** | {cover_subtitle} |
+| **Palavras** | {contagem de palavras do artigo gerado} |
+| **Links internos** | {numero de links internos} |
 
-**Bloco 2 — Artigo gerado:**
-Mostre o HTML do artigo (ou preview formatado com os H2s destacados).
-Indique: {X} palavras, {N} links internos.
+Nao mostre o HTML do artigo. O usuario revisa diretamente em `.tmp/article_body.html`.
 
 Aguarde aprovacao ou pedidos de alteracao.
 
-**Se usuario pedir mudancas no SEO plan:** re-execute `seo_analyzer.py` com o ajuste, depois re-execute `generate_article.py`. Mostre ambos novamente.
-**Se usuario pedir mudancas apenas no artigo:** re-execute so `generate_article.py` com instrucoes adicionais via `--structure-type` ou ajuste manual no HTML.
+**Se usuario pedir mudancas no SEO plan:** re-execute `seo_analyzer.py` com o ajuste, depois re-execute `generate_article.py`. Mostre a tabela novamente.
+**Se usuario pedir mudancas apenas no artigo:** re-execute so `generate_article.py` com instrucoes adicionais via `--structure-type` ou ajuste manual no HTML. Mostre a tabela atualizada.
 
 ## Transicao
 

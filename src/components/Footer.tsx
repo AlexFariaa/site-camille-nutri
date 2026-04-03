@@ -14,6 +14,7 @@ export function Footer() {
           <Image
             src="/images/marrom_corte.png"
             alt="Camille Barbosa Logo"
+            title="Camille Barbosa"
             width={320}
             height={85}
             className="w-full max-w-[280px] md:max-w-[320px] h-auto object-contain object-left mb-2"

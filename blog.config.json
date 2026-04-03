@@ -130,6 +130,11 @@
       "branch": "main"
     }
   },
+  "a2publisher": {
+    "site_id": "6fdbb370-58c0-4cf0-92af-7399a01bc400",
+    "api_key": "fe2d88cf0cff407438460a56ff8a914d",
+    "publisher_url": "https://a2-publisher.netlify.app"
+  },
   "image_library": {
     "niches": [
       {

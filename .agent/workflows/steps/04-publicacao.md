@@ -27,6 +27,14 @@ const post: BlogPost = {
 export default post;
 ```
 
+**Regras criticas do campo `content`:**
+- NUNCA incluir a primeira linha `<img class="article-cover">` do `article_body.html` — o template renderiza a capa automaticamente via o campo `coverImage`. O `content` deve comecar no primeiro `<p>` de introducao.
+- Todo `<img>` inline dentro do `content` deve ter atributos `alt` E `title` (ja gerados pelo script de imagens inline).
+
+**Convencao do projeto — Next.js `<Image>`:**
+- Todo componente `<Image>` neste projeto deve ter atributo `title` alem de `alt`.
+- Para `coverImage` e `thumbImage`: o template do blog ja aplica `title` automaticamente — nao e necessario campo extra no BlogPost.
+
 **Dados a usar:**
 - Leia `.tmp/seo_plan.json` para: slug, meta_title, meta_description, primary_keyword
 - Leia `.tmp/article_body.html` para: conteudo do artigo (html completo)
@@ -51,7 +59,7 @@ export const blogPosts: BlogPost[] = [
 ];
 ```
 
-**CRITICO:** Sem adicionar no array, o artigo nao aparecera no blog mesmo que o arquivo exista.
+**CRITICO:** Sem adicionar no array, o artigo nao aparecera no blog mesmo que o arquivo exista. O import e necessario mas insuficiente — e o array que controla a exibicao.
 
 ## Sub-passo 4.3 — Atualizar blog/links_permitidos.md
 
@@ -67,17 +75,30 @@ Adicione no final da secao correspondente:
   * **Quando usar:** {Resumo de 2-3 linhas baseado na descricao e contexto do artigo, instruindo futuros LLMs sobre quando sugerir esse link organicamente}.
 ```
 
-## GATE 4 — Deploy
+## Sub-passo 4.4 — Enviar ao A2 Publisher
 
-Apos publicar os 3 arquivos acima, pergunte apenas:
+Execute o script de envio:
 
-"Posso fazer o deploy?"
+```
+python execution/send_to_publisher.py
+```
 
-Se sim: execute `git add src/data/blog/{slug}.ts src/data/blog-posts.ts blog/links_permitidos.md public/images/blog/{slug}.avif public/images/blog/thumb-{slug}.avif public/images/blog/{slug}-inline-*.avif` + `git commit -m "blog: publicar artigo {slug}"` + `git push`
+O script irá:
+- Ler `.tmp/seo_plan.json` e `.tmp/article_body.html`
+- Fazer upload das imagens inline para o A2 Publisher e substituir os src no HTML
+- Enviar a imagem de capa (se existir em `public/images/blog/{slug}.avif`)
+- Criar o post como draft no A2 Publisher
 
-Apos o push com sucesso: delete `.tmp/retomar_atual.md` se existir (arquivo de retomada nao e mais necessario apos publicacao).
+**Se o script retornar sucesso:**
+Informe apenas: "Post enviado ao A2 Publisher."
 
-Se nao: encerre. Os arquivos ja estao publicados localmente.
+**Se retornar 409 (slug duplicado):**
+Informe o usuário que o post já existe — não é erro fatal.
+
+**Se retornar erro de conexão ou 401:**
+Verifique as credenciais em `blog.config.json` (seção `a2publisher`).
+
+Apos o envio ao A2 Publisher: delete `.tmp/retomar_atual.md` se existir.
 
 ## Nota: arquivo de retomada
 

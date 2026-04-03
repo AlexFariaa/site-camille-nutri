@@ -78,11 +78,11 @@ Leia `cover_title` e `cover_subtitle` de `.tmp/seo_plan.json` — sao os valores
    - **Se `use_niche_image=false`:** omita o `update_fill` — o fundo do template ja esta correto
    - `replace_text` no titulo: element ID do config, valor = `cover_title` (ja em MAIUSCULAS)
    - `replace_text` no subtitulo: element ID do config, valor = `cover_subtitle`
-   - `format_text` no titulo: `{"color": "#FFFFFF", "font_weight": "bold"}`
+   - `format_text` no titulo: `{"font_weight": "bold"}` (NAO altere a cor — o template ja tem as cores corretas definidas)
    - NAO altere a cor do subtitulo
 3. Confirme o preview e salve via `commit-editing-transaction`
-4. Exporte via `export-design` no design ID do config com `width: 1200, height: 630`, formato PNG
-5. Baixe o PNG exportado e converta para AVIF: salve em `public/images/blog/{slug}.avif`
+4. Exporte via `export-design` no design ID do config — formato JPG, qualidade pro, SEM especificar width/height (exportar sempre nas dimensoes originais do template): `{"type": "jpg", "quality": 90, "export_quality": "pro"}`
+5. Baixe o JPG exportado e converta para AVIF: salve em `public/images/blog/{slug}.avif`
 
 Se a transacao Canva falhar no meio: cancele via `cancel-editing-transaction`, reabra e reaplique todas as operacoes em uma unica chamada.
 
@@ -97,8 +97,8 @@ Use o template de miniatura do Canva (`canva.thumb.template_id` de `blog.config.
    - `format_text` no titulo: `{"font_weight": "bold"}` (NAO altere a cor — o template de miniatura tem fundo claro)
    - NAO altere a cor do subtitulo
 3. Confirme o preview e salve via `commit-editing-transaction`
-4. Exporte via `export-design` com as dimensoes de `canva.thumb.width` x `canva.thumb.height`, formato PNG
-5. Baixe o PNG exportado e converta para AVIF: salve em `public/images/blog/thumb-{slug}.avif`
+4. Exporte via `export-design` — formato JPG, qualidade pro, SEM especificar width/height (exportar sempre nas dimensoes originais do template): `{"type": "jpg", "quality": 90, "export_quality": "pro"}`
+5. Baixe o JPG exportado e converta para AVIF: salve em `public/images/blog/thumb-{slug}.avif`
 
 Confirme que os dois arquivos existem:
 - `public/images/blog/{slug}.avif` (capa)

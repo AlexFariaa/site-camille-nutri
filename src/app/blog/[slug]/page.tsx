@@ -68,6 +68,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <Image
             src={post.coverImage}
             alt={`Capa do artigo: ${post.title}`}
+            title={`Capa do artigo: ${post.title}`}
             width={2400}
             height={960}
             sizes="(max-width: 1024px) 100vw, 1024px"

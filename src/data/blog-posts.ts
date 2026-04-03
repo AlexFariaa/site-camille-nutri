@@ -18,9 +18,29 @@ import dietaEmagrecerVsGanharMassa from "./blog/dieta-para-emagrecer-vs-ganhar-m
 import entenderMacros from "./blog/como-entender-os-proprios-macros-passo-a-passo";
 import calculoMacros from "./blog/calculo-de-macros-na-pratica-estudo-de-caso";
 import checklistMacros from "./blog/checklist-calcular-ajustar-macros-dieta";
+import errosWhey from "./blog/erros-na-escolha-do-whey";
+import dietaHiperproteicaErros from "./blog/dieta-hiperproteica-erros-e-acertos";
+import alimentacaoTirzepatida from "./blog/alimentacao-tratamento-tirzepatida-semaglutida";
+import folhasVerdesVontade from "./blog/folhas-verdes-a-vontade-explicacao-cientifica";
+import errosAoEmagrecer from "./blog/erros-ao-emagrecer-com-pouco-dinheiro";
+import recomposicaoCorporalPratica from "./blog/recomposicao-corporal-na-pratica-estudo-de-caso";
+import alimentacaoTreino from "./blog/alimentacao-antes-e-depois-do-treino";
+import errosPreTreino from "./blog/erros-alimentacao-pre-treino";
+import alimentosGorduraAbdominal from "./blog/alimentos-que-aumentam-gordura-abdominal";
+import checklistMounjaroOzempic from "./blog/checklist-nutricional-mounjaro-ozempic";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
+  checklistMounjaroOzempic,
+  alimentosGorduraAbdominal,
+  errosPreTreino,
+  alimentacaoTreino,
+  recomposicaoCorporalPratica,
+  errosAoEmagrecer,
+  folhasVerdesVontade,
+  alimentacaoTirzepatida,
+  dietaHiperproteicaErros,
+  errosWhey,
   checklistMacros,
   calculoMacros,
   entenderMacros,

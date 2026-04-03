@@ -60,6 +60,7 @@ export default function LandingClient() {
           <Image
             src="/images/logo.png"
             alt="Camille Barbosa Logo"
+            title="Camille Barbosa"
             fill
             sizes="(max-width: 768px) 160px, 192px"
             className="object-contain object-left"

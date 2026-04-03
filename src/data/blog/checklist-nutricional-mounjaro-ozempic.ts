@@ -1,6 +1,17 @@
-<img src="/images/blog/checklist-nutricional-mounjaro-ozempic.avif" alt="Checklist nutricional para quem usa Mounjaro ou Ozempic, mostrando alimentos variados e plano alimentar organizado" title="Checklist nutricional para Mounjaro e Ozempic: como organizar sua alimentação" class="article-cover">
+import type { BlogPost } from "@/data/blog-posts";
 
-<p><strong>Se você acha que basta tomar Mounjaro ou Ozempic e esperar o milagre, pode parar por aqui.</strong> Esses medicamentos realmente mexem no apetite e aceleram o emagrecimento, mas sem um checklist nutricional ajustado, o resultado fica bem abaixo do esperado, além de efeitos colaterais que ninguém quer enfrentar.</p>
+const post: BlogPost = {
+  slug: "checklist-nutricional-mounjaro-ozempic",
+  title: "Checklist Nutricional para Quem Está Iniciando o Uso de Mounjaro ou Ozempic",
+  excerpt: "Descubra o checklist nutricional essencial para otimizar seu tratamento com Mounjaro ou Ozempic e alcançar seus objetivos de saúde.",
+  date: "01 Abr 2026",
+  category: "Emagrecimento",
+  author: "Camille Barbosa",
+  readTime: "6 min de leitura",
+  metaTitle: "Checklist Nutricional para Mounjaro e Ozempic",
+  coverImage: "/images/blog/checklist-nutricional-mounjaro-ozempic.avif",
+  thumbImage: "/images/blog/thumb-checklist-nutricional-mounjaro-ozempic.avif",
+  content: `<p><strong>Se você acha que basta tomar Mounjaro ou Ozempic e esperar o milagre, pode parar por aqui.</strong> Esses medicamentos realmente mexem no apetite e aceleram o emagrecimento, mas sem um checklist nutricional ajustado, o resultado fica bem abaixo do esperado, além de efeitos colaterais que ninguém quer enfrentar.</p>
 <p>No consultório, vejo de perto: quem não adapta a alimentação ao usar Mounjaro ou Ozempic sofre mais com náuseas, perde massa muscular e, às vezes, até engorda de novo depois. O segredo está no combo: medicamento <strong>mais</strong> plano alimentar pensado para esse contexto específico. E é exatamente isso que preparei aqui: um checklist nutricional Mounjaro e Ozempic completo, para você aplicar desde o primeiro dia.</p>
 
 <nav class="article-index" aria-label="Índice do artigo">
@@ -140,4 +151,7 @@
 <h2 id="cta-checklist-nutricional-mounjaro-ozempic">Checklist feito: e agora, quem ajusta na vida real?</h2>
 <p>Trocar a teoria pelo prato de verdade é onde mora a diferença. Você pode salvar esse checklist nos favoritos e colar na geladeira, mas adaptar de verdade, levando em conta rotina, preferências e até aqueles dias em que nada desce, é um trabalho que faço junto com cada paciente.</p>
 <p>Se você quer sair do improviso e sentir a diferença de um plano ajustado para o seu corpo, seus horários e seu objetivo com Mounjaro ou Ozempic, é só falar comigo.</p>
-<p><a href="https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21" title="Agendar consulta de nutrição com a Camille Barbosa pelo WhatsApp">Agendar Consulta com a Camille</a></p>
+<p><a href="https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21" title="Agendar consulta de nutrição com a Camille Barbosa pelo WhatsApp">Agendar Consulta com a Camille</a></p>`
+};
+
+export default post;

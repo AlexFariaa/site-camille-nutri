@@ -89,8 +89,8 @@ Use estes padrões como base, nunca copie os exemplos literalmente:
 - Em pelo menos 1 H2, de forma natural
 - A cada 200-300 palavras no corpo, use variações e sinônimos, nunca repita artificialmente
 
-**Palavras-chave secundárias (LSI):**
-Antes de escrever, identifique 4 a 6 termos semanticamente relacionados à keyword principal (sinônimos, perguntas frequentes, subtemas do assunto). Distribua-os organicamente ao longo do texto, priorizando H2s, H3s e primeiras frases de parágrafo. Nunca agrupe todas em um único trecho.
+**Palavras-chave secundárias (`secondary_keywords` do SEO plan):**
+Use os 4 a 6 termos gerados pelo seo_analyzer. Distribua-os organicamente ao longo do texto, priorizando H2s, H3s e primeiras frases de parágrafo. Nunca agrupe todos em um único trecho.
 
 **Contagem de palavras:** 1.000 a 1.500 palavras. Margem de ±15% (mínimo ~850, máximo ~1.725).
 
@@ -124,7 +124,7 @@ Antes de escrever, identifique 4 a 6 termos semanticamente relacionados à keywo
 <a href="https://wa.me/5511956831515?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20como%20funciona%20sua%20consulta%21" title="Agendar consulta de nutrição com a Camille Barbosa pelo WhatsApp">Agendar Consulta com a Camille</a>
 ```
 
-**Title tag:** `{Titulo do Post} | Camille Barbosa` — o título do post deve ter no máximo 42 caracteres. O sufixo " | Camille Barbosa" (18 chars) é fixo, totalizando até 60 chars renderizados no Google.
+**Title tag:** `{Titulo do Post} | Camille Barbosa` — máximo 60 caracteres no total (incluindo o sufixo " | Camille Barbosa").
 
 ---
 

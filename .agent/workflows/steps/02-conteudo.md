@@ -16,10 +16,10 @@ Resultado salvo em `.tmp/seo_plan.json`.
 
 Valide o JSON gerado:
 - Slug sem acentos ou caracteres especiais
-- `meta_title` com no máximo 42 caracteres (sem o sufixo " | Camille Barbosa", o total renderizado no Google deve ficar dentro de 60 chars)
+- `meta_title` com no máximo 60 caracteres no total (o sufixo " | Camille Barbosa" já está incluído no valor gerado)
 - `meta_description` com no máximo 150 caracteres
 - `primary_keyword` presente no meta_title e no início da meta_description
-- `lsi_keywords`: lista de 4 a 6 termos semanticamente relacionados à keyword principal (sinônimos, perguntas frequentes, subtemas). Se ausente ou com menos de 4 termos: complemente antes de prosseguir.
+- `secondary_keywords`: lista de 4 a 6 termos semanticamente relacionados à keyword principal (sinônimos, perguntas frequentes, subtemas). Se ausente ou com menos de 4 termos: complemente antes de prosseguir.
 - `structure_type` coerente com o angulo escolhido:
   - Tutorial → structure_type deve indicar passo a passo / guia
   - Estudo de caso → structure_type deve indicar narrativa / caso real
@@ -68,7 +68,7 @@ Resultado salvo em `.tmp/article_body.html`.
 
 O script executa validacao automatica. Verifique os avisos:
 - Keyword presente no H1, intro e pelo menos 1 H2
-- LSI keywords do seo_plan distribuídas ao longo do artigo (H2s, H3s, primeiras frases de parágrafo)
+- secondary_keywords do seo_plan distribuídas ao longo do artigo (H2s, H3s, primeiras frases de parágrafo)
 - Contagem de palavras dentro da faixa alvo
 - H2s nao sao genericos
 - 2-4 links internos presentes
@@ -86,7 +86,7 @@ Mostre ao usuario apenas o resumo do SEO plan:
 |-------|-------|
 | Slug | {slug} |
 | Keyword | {primary_keyword} |
-| LSI Keywords | {lsi_keywords, separadas por vírgula} |
+| Keywords secundárias | {secondary_keywords, separadas por vírgula} |
 | Angulo | {angulo escolhido} |
 | Tipo de texto | {descricao do structure_type em linguagem clara} |
 | Titulo SEO | {meta_title} |

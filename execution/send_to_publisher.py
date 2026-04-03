@@ -62,6 +62,18 @@ with open(SEO_PLAN_PATH, encoding="utf-8") as f:
 with open(ARTICLE_HTML_PATH, encoding="utf-8") as f:
     raw_html = f.read()
 
+# Remove a imagem de capa do HTML bruto: a capa é renderizada via coverImage no frontend.
+def strip_article_cover(html: str) -> str:
+    return re.sub(
+        r'^\s*<img[^>]*class="[^"]*article-cover[^"]*"[^>]*>\s*',
+        '',
+        html,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+
+raw_html = strip_article_cover(raw_html)
+
 title           = seo_plan.get("meta_title", seo_plan.get("title", ""))
 slug            = seo_plan.get("slug", "")
 seo_title       = seo_plan.get("meta_title", seo_plan.get("seo_title", title))
@@ -138,7 +150,7 @@ if os.path.exists(cover_path):
             upload_res = requests.post(
                 f"{PUBLISHER_URL}/api/upload-image",
                 headers=HEADERS,
-                data={"site_id": SITE_ID, "post_slug": slug},
+                data={"site_id": SITE_ID, "post_slug": slug, "type": "cover"},
                 files={"file": (f"{slug}.avif", img_file, "image/avif")},
                 timeout=60,
             )
@@ -157,17 +169,22 @@ else:
 # ── Upload da miniatura (opcional) ───────────────────────────
 
 thumb_image_url = None
-thumb_path = f"public/images/blog/thumb-{slug}.avif"
+thumb_candidates = [
+    f"public/images/blog/thumb-{slug}.avif",
+    f"public/images/blog/{slug}-thumb.avif",
+]
+thumb_path = next((p for p in thumb_candidates if os.path.exists(p)), None)
 
-if os.path.exists(thumb_path):
+if thumb_path:
     print(f"\n→ Enviando miniatura: {thumb_path}")
     try:
+        thumb_filename = os.path.basename(thumb_path)
         with open(thumb_path, "rb") as img_file:
             upload_res = requests.post(
                 f"{PUBLISHER_URL}/api/upload-image",
                 headers=HEADERS,
-                data={"site_id": SITE_ID, "post_slug": slug},
-                files={"file": (f"thumb-{slug}.avif", img_file, "image/avif")},
+                data={"site_id": SITE_ID, "post_slug": slug, "type": "thumb"},
+                files={"file": (thumb_filename, img_file, "image/avif")},
                 timeout=60,
             )
         if upload_res.status_code == 200:
@@ -178,7 +195,7 @@ if os.path.exists(thumb_path):
     except Exception as e:
         print(f"  ⚠ Erro no upload da miniatura: {e}")
 else:
-    print(f"\n→ Miniatura não encontrada em {thumb_path}, pulando upload.")
+    print("\n→ Miniatura não encontrada (tentado: thumb-{slug}.avif e {slug}-thumb.avif), pulando upload.")
 
 # ── Enviar post ao A2 Publisher ───────────────────────────────
 

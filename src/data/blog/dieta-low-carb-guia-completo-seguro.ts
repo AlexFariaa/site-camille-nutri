@@ -9,8 +9,8 @@ const post: BlogPost = {
   category: 'Emagrecimento',
   author: 'Camille Barbosa',
   readTime: '7 min de leitura',
-  coverImage: 'https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-low-carb-guia-completo-seguro/thumb.avif',
-  thumbImage: 'https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-low-carb-guia-completo-seguro/cover.avif',
+  coverImage: '/images/blog/dieta-low-carb-guia-completo-seguro.avif',
+  thumbImage: '/images/blog/thumb-dieta-low-carb-guia-completo-seguro.avif',
   content: `<p><strong>Se você acha que dieta low-carb é só cortar pão e arroz, sinto te dizer: você está começando do jeito errado.</strong> O que vejo na prática é gente empolgada que tira todos os carboidratos por conta própria, passa fome, estraga o humor e acaba voltando ao ponto de partida, ou até pior.</p>
 <p>Na minha consultoria, quando alguém chega pedindo “quero emagrecer, me passa uma low-carb?”, a primeira coisa que faço é explicar como fazer isso com segurança, sem cair nos atalhos que mais prejudicam. Dieta low-carb funciona, sim, mas o segredo está nos detalhes: e é exatamente isso que você vai encontrar neste guia low-carb direto ao ponto.</p>
 

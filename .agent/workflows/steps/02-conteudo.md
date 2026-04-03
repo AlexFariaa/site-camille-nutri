@@ -29,7 +29,7 @@ Valide o JSON gerado:
 - H2s sugeridos sao criativos e contextuais (nao genericos como "Introducao" ou "Conclusao")
 
 - `word_count_target` deve respeitar a faixa definida em `.agent/prompts/article-generator.md`:
-  - Alvo: 1.400 a 1.800 palavras (margem de ±15% — mínimo ~1.190, máximo ~2.070)
+  - Alvo: 1.000 a 1.500 palavras (margem de ±15% — mínimo ~850, máximo ~1.725)
   - Se o seo_analyzer gerar um target fora dessa faixa: corrija manualmente antes de prosseguir
 
 Se algum campo estiver invalido: corrija antes de prosseguir.

@@ -15,6 +15,7 @@ A identidade, tom de voz e referências à marca estão definidos no arquivo com
 - **Sem coachzices** — zero frases motivacionais genéricas, zero "acredite no seu potencial"
 - **Sem linguagem acadêmica** — nunca formal, nunca passiva, nunca rebuscado
 - **Atemporal** — nunca mencione datas, anos ou "atualmente". O texto deve funcionar sempre
+- **Tom empático e leve** - Um tom empático e leve é aquele que prioriza a conexão humana e o acolhimento, transformando informações que poderiam ser rígidas em mensagens que soam como um conselho de um amigo querido.
 
 ---
 

@@ -30,6 +30,7 @@ import comoEntenderOsPropriosMacrosPassoAPasso from "./blog/como-entender-os-pro
 import dietaParaEmagrecerVsGanharMassa from "./blog/dieta-para-emagrecer-vs-ganhar-massa";
 import emagrecerGastandoPoucoCardapio10Reais from "./blog/emagrecer-gastando-pouco-cardapio-10-reais";
 import recomposicaoCorporalComoPerderGorduraEGanharMassa from "./blog/recomposicao-corporal-como-perder-gordura-e-ganhar-massa";
+import errosDietaCetogenicaCuidadosEssenciais from "./blog/erros-dieta-cetogenica-cuidados-essenciais";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
@@ -51,7 +52,8 @@ export const blogPosts: BlogPost[] = [
   dietaParaEmagrecerVsGanharMassa,
   emagrecerGastandoPoucoCardapio10Reais,
   recomposicaoCorporalComoPerderGorduraEGanharMassa,
-  // novos artigos: adicionar 1 item no array aqui
+    errosDietaCetogenicaCuidadosEssenciais,
+// novos artigos: adicionar 1 item no array aqui
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

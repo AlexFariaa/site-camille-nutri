@@ -11,9 +11,7 @@ const post: BlogPost = {
   readTime: '9 min de leitura',
   coverImage: 'https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-economica-para-emagrecer-30-dias/cover.avif',
   thumbImage: 'https://erbughiicajxqoklahbu.supabase.co/storage/v1/object/public/post-images/6fdbb370-58c0-4cf0-92af-7399a01bc400/dieta-economica-para-emagrecer-30-dias/thumb.avif',
-  content: `<h1>Dieta economica para emagrecer: o que muda em 30 dias</h1>
-
-<p><strong>Se você acha que só dá para emagrecer gastando uma fortuna com alimentos “fit” ou receitas mirabolantes, tenho uma notícia: isso é mito dos grandes.</strong> Na prática, vejo muita gente patinando entre cortar tudo de uma vez, passar fome a semana inteira e, no final, não só não emagrece, como ainda sente culpa por não conseguir manter o ritmo (e por gastar mais do que devia no mercado). Neste artigo, você vai ver uma estratégia real de <strong>dieta economica para emagrecer</strong> sem complicação.</p>
+  content: `<p><strong>Se você acha que só dá para emagrecer gastando uma fortuna com alimentos “fit” ou receitas mirabolantes, tenho uma notícia: isso é mito dos grandes.</strong> Na prática, vejo muita gente patinando entre cortar tudo de uma vez, passar fome a semana inteira e, no final, não só não emagrece, como ainda sente culpa por não conseguir manter o ritmo (e por gastar mais do que devia no mercado). Neste artigo, você vai ver uma estratégia real de <strong>dieta economica para emagrecer</strong> sem complicação.</p>
 <p>O que realmente funciona para emagrecer com pouco dinheiro não é segredo de nutricionista: é estratégia, planejamento e saber o que priorizar. Vou te mostrar como montar uma <strong>dieta econômica para emagrecer</strong> por 30 dias, sem cortes radicais, sem precisar de ingredientes caros e, principalmente, sem abrir mão da saúde.</p>
 
 <nav class="article-index" aria-label="Índice do artigo">

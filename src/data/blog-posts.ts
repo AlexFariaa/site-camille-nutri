@@ -33,6 +33,7 @@ import recomposicaoCorporalComoPerderGorduraEGanharMassa from "./blog/recomposic
 import errosDietaCetogenicaCuidadosEssenciais from "./blog/erros-dieta-cetogenica-cuidados-essenciais";
 import dietaEconomicaParaEmagrecer30Dias from "./blog/dieta-economica-para-emagrecer-30-dias";
 import tiposDeDietaExplicadosNutricionista from "./blog/tipos-de-dieta-explicados-nutricionista";
+import checklistAlimentacaoEconomicaParaEmagrecer from "./blog/checklist-alimentacao-economica-para-emagrecer";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
@@ -57,6 +58,7 @@ export const blogPosts: BlogPost[] = [
     errosDietaCetogenicaCuidadosEssenciais,
   dietaEconomicaParaEmagrecer30Dias,
   tiposDeDietaExplicadosNutricionista,
+  checklistAlimentacaoEconomicaParaEmagrecer,
 // novos artigos: adicionar 1 item no array aqui
 ];
 

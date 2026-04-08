@@ -36,6 +36,7 @@ import tiposDeDietaExplicadosNutricionista from "./blog/tipos-de-dieta-explicado
 import checklistAlimentacaoEconomicaParaEmagrecer from "./blog/checklist-alimentacao-economica-para-emagrecer";
 import recomposicaoCorporalAlimentosOQueComer from "./blog/recomposicao-corporal-alimentos-o-que-comer";
 import errosNaRecomposicaoCorporalComoCorrigir from "./blog/erros-na-recomposicao-corporal-como-corrigir";
+import alimentosPreEPosTreinoGuiaVisual from "./blog/alimentos-pre-e-pos-treino-guia-visual";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
@@ -63,6 +64,7 @@ export const blogPosts: BlogPost[] = [
   checklistAlimentacaoEconomicaParaEmagrecer,
   recomposicaoCorporalAlimentosOQueComer,
   errosNaRecomposicaoCorporalComoCorrigir,
+  alimentosPreEPosTreinoGuiaVisual,
 // novos artigos: adicionar 1 item no array aqui
 ];
 

@@ -38,6 +38,7 @@ import recomposicaoCorporalAlimentosOQueComer from "./blog/recomposicao-corporal
 import errosNaRecomposicaoCorporalComoCorrigir from "./blog/erros-na-recomposicao-corporal-como-corrigir";
 import alimentosPreEPosTreinoGuiaVisual from "./blog/alimentos-pre-e-pos-treino-guia-visual";
 import wheyAntesOuDepoisDoTreino from "./blog/whey-antes-ou-depois-do-treino";
+import checklistNutricaoParaTreinoOQueComer from "./blog/checklist-nutricao-para-treino-o-que-comer";
 // novos artigos: adicionar 1 linha de import aqui
 
 export const blogPosts: BlogPost[] = [
@@ -67,6 +68,7 @@ export const blogPosts: BlogPost[] = [
   errosNaRecomposicaoCorporalComoCorrigir,
   alimentosPreEPosTreinoGuiaVisual,
   wheyAntesOuDepoisDoTreino,
+  checklistNutricaoParaTreinoOQueComer,
 // novos artigos: adicionar 1 item no array aqui
 ];
 

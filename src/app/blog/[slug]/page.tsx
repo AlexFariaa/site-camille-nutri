@@ -6,30 +6,28 @@ import type { Metadata } from "next";
 import { BlogNavbar } from "@/components/BlogNavbar";
 import { Footer } from "@/components/Footer";
 import { ShareArticle } from "@/components/ShareArticle";
-import { getPostBySlug } from "@/data/blog-posts";
+import { formatPostDate, getPostBySlug, getPostExcerpt } from "@/lib/cms";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   
   if (!post) {
     return { title: 'Artigo não encontrado | Camille Barbosa' };
   }
   
   return {
-    title: post.metaTitle ?? `${post.title} | Camille Barbosa`,
-    description: post.excerpt,
-    authors: [{ name: post.author, url: 'https://camillebarbosa.com.br' }],
+    title: post.seo_title ?? post.title,
+    description: post.seo_description ?? getPostExcerpt(post.content),
     alternates: {
       canonical: `https://camillebarbosa.com.br/blog/${slug}`,
     },
     openGraph: {
-      title: post.metaTitle ?? post.title,
-      description: post.excerpt,
-      images: [post.coverImage],
+      title: post.seo_title ?? post.title,
+      description: post.seo_description ?? getPostExcerpt(post.content),
+      images: post.cover_image_url ? [post.cover_image_url] : [],
       type: 'article',
-      publishedTime: post.date,
-      authors: [post.author],
+      publishedTime: post.published_at,
       siteName: 'Camille Barbosa',
     }
   };
@@ -37,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -54,26 +52,23 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </Link>
           
           <header className="mb-12 text-center md:text-left">
-            <div className="text-sm font-medium text-accent mb-6 tracking-widest uppercase">{post.category} • {post.date}</div>
+            <div className="text-sm font-medium text-accent mb-6 tracking-widest uppercase">{post.seo_title ? `${post.seo_title} • ` : ""}{formatPostDate(post.published_at)}</div>
             <h1 className="text-4xl md:text-6xl tracking-tight leading-[1.1] font-medium mb-8 max-w-[20ch]">{post.title}</h1>
-            <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 text-primary/70 text-sm">
-              <span>Por {post.author}</span>
-              <span className="hidden md:inline">•</span>
-              <span>{post.readTime}</span>
-            </div>
           </header>
         </div>
 
         <div className="w-full max-w-5xl mx-auto rounded-[2rem] overflow-hidden mb-16 bg-primary/5 border border-primary/10">
-          <Image
-            src={post.coverImage}
-            alt={`Capa do artigo: ${post.title}`}
-            title={`Capa do artigo: ${post.title}`}
-            width={2400}
-            height={960}
-            sizes="(max-width: 1024px) 100vw, 1024px"
-            className="w-full h-auto mix-blend-multiply opacity-90"
-          />
+          {post.cover_image_url ? (
+            <Image
+              src={post.cover_image_url}
+              alt={`Capa do artigo: ${post.title}`}
+              title={`Capa do artigo: ${post.title}`}
+              width={2400}
+              height={960}
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="w-full h-auto mix-blend-multiply opacity-90"
+            />
+          ) : null}
         </div>
 
         <div className="max-w-[65ch] mx-auto">

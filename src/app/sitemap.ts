@@ -1,14 +1,14 @@
 import type { MetadataRoute } from 'next'
-import { getAllPosts } from '@/lib/cms'
+import { getAllSlugs } from '@/lib/cms'
 
 const BASE_URL = 'https://camillebarbosa.com.br'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = await getAllPosts()
+  const slugs = await getAllSlugs()
 
-  const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: new Date(post.published_at),
+  const postEntries: MetadataRoute.Sitemap = slugs.map((s) => ({
+    url: `${BASE_URL}/blog/${s.slug}`,
+    lastModified: new Date(s.updated_at),
     changeFrequency: 'monthly',
     priority: 0.8,
   }))

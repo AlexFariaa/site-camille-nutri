@@ -96,6 +96,14 @@ export function Footer() {
 
       <div className="max-w-7xl mx-auto border-t border-white/10 mt-16 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-sm">
         <p>© 2026 Camille Barbosa Nutrição. Todos os direitos reservados.</p>
+        <a
+          href="https://a2agency.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition-colors"
+        >
+          Criação de Sites Profissionais por A2 Agency
+        </a>
       </div>
     </footer>
   );
